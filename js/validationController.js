@@ -1,4 +1,6 @@
 
-function validate() {
+function validate(data) {
+    switch (data){
 
+    }
 }
