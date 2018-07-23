@@ -7,10 +7,26 @@
 
 let TEL = 'tel';
 let EMAIL = 'email';
-let Name = 'name';
+let NAME = 'name';
 
 function validate(type, data) {
-    if (type === TEL){
-
+    switch (type){
+        case TEL: validatePhoneNumber(data);
+            break;
+        case EMAIL: validateEmail(data);
+            break;
+        case NAME: validateName(data);
     }
+}
+
+function validatePhoneNumber(data) {
+
+}
+
+function validateEmail(data) {
+
+}
+
+function validateName(data) {
+
 }
