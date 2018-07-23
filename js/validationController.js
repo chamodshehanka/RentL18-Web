@@ -30,3 +30,13 @@ function validateEmail(data) {
 function validateName(data) {
 
 }
+
+let constraints = {
+    name: {
+        presence: true
+    },
+    email: {
+
+    }
+
+};
