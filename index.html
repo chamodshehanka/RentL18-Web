@@ -29,7 +29,7 @@
             height: 100px;
             width: 100%;
             background-color: #8488a0;
-            margin: 0;
+            margin: auto;
         }
     </style>
     <!--End Critical CSS-->
@@ -48,7 +48,7 @@
 </header>
 <!--End Header-->
 
-<button class="foo-button mdc-button">Click Here</button>
+<button class="foo-button mdc-button" onclick="validate(TEL,775633985)">Click Here</button>
 
 <!--Footer-->
 <footer>
@@ -59,7 +59,10 @@
 <!--JS Controllers-->
 <!--Put JQuery lib here!!!!!!!!-->
 <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-<script async src="js/validationController.js"></script>
+<script async src="js/validationController.js">
+    const number = 775633985;
+    validate(TEL,number)
+</script>
 <!--End JS Controllers-->
 </body>
 </html>
