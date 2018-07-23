@@ -5,4 +5,3 @@
  * Time: 4:27 PM
  */
 
-mdc.foo.MDCFoo.attachTo(document.querySelector('.mdc-foo'));
