@@ -10,5 +10,7 @@ let EMAIL = 'email';
 let Name = 'name';
 
 function validate(type, data) {
-    if (type === TEL)
+    if (type === TEL){
+
+    }
 }
