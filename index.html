@@ -47,6 +47,11 @@
 </header>
 <!--End Header-->
 
+<div class="mdc-text-field">
+    <input class="mdc-text-field__input" type="text" id="input">
+    <label for="input" class="mdc-floating-label">Input Label</label>
+    <div class="mdc-line-ripple"></div>
+</div>
 <button class="foo-button mdc-button" onclick="validate(TEL,775633985)">Click Here</button>
 
 <!--Footer-->
@@ -57,7 +62,7 @@
 
 <!--JS Controllers-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js">
+<script async src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js">
     // mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
 </script>
 <script async src="js/validationController.js">
