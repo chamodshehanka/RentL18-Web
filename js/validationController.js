@@ -20,7 +20,7 @@ function validate(type, data) {
 }
 
 function validatePhoneNumber(data) {
-
+    let ex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 }
 
 function validateEmail(data) {
