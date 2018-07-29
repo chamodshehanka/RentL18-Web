@@ -19,6 +19,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--End SEO-->
 
+    <!-- UIKit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/css/uikit.min.css" />
+    <!--End UIKit CSS-->
+
     <!--Critical CSS-->
     <style>
         .header{
@@ -39,9 +43,11 @@
 <body>
 
 <!--Header-->
-<header>
-
-</header>
+<div class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left">
+        <a class="uk-navbar-toggle" uk-navbar-toggle-icon href=""></a>
+    </div>
+</div>
 <!--End Header-->
 
 <!--Footer-->
@@ -52,6 +58,13 @@
 
 <!--JS Controllers-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<!-- UIKit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit-icons.min.js"></script>
+<!--End UIKit JS-->
+
 <script async src="js/validationController.js">
     const number = 775633985;
     validate(TEL,number)
