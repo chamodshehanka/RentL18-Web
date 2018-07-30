@@ -20,24 +20,13 @@ function validate(type, data) {
 }
 
 function validatePhoneNumber(data) {
-    let ex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    return new RegExp(ex,data);
+    return /^[+]?(1-|1\s|1|\d{3}-|\d{3}\s|)?((\(\d{3}\))|\d{3})(-|\s)?(\d{3})(-|\s)?(\d{4})$/.test(data);
 }
 
 function validateEmail(data) {
-
+    return
 }
 
 function validateName(data) {
 
 }
-
-let constraints = {
-    name: {
-        presence: true
-    },
-    email: {
-
-    }
-
-};
