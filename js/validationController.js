@@ -16,6 +16,8 @@ function validate(type, data) {
         case EMAIL: validateEmail(data);
             break;
         case NAME: validateName(data);
+            break;
+        default: console.log("Invalid data type !!!");
     }
 }
 
@@ -24,9 +26,9 @@ function validatePhoneNumber(data) {
 }
 
 function validateEmail(data) {
-    return
+    return /^$/.test(data);
 }
 
 function validateName(data) {
-
+    return /[a-z]/.test(data);
 }
