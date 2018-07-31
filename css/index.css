@@ -1,7 +1,8 @@
 .hero-background {
-    background-image: url('../images/hero-background-image.jpg');
+    width: 100%;
     -webkit-background-size:cover;
     background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background: url('../images/hero-background-image.jpg') center;
+    height: 300px;
+    z-index: 9999;
 }
