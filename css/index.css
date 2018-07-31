@@ -1,0 +1,7 @@
+.hero-background {
+    background-image: url('../images/hero-background-image.jpg');
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
