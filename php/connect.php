@@ -7,4 +7,4 @@
  */
 
 mysqli_connect('localhost','root','wampwamp');
-mysql_select_db('RentLIO-Web');
+mysql_select_db('rentlioweb');
