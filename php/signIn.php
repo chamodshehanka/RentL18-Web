@@ -12,5 +12,7 @@ $password = $_POST['password'];
 $connection = mysqli_connect("localhost","root","wampwamp","rentlioweb");
 
 if ($connection){
-
+    echo '';
+}else{
+    echo '';
 }
