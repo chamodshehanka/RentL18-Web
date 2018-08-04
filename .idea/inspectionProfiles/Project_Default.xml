@@ -4,7 +4,7 @@
     <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="8">
+          <list size="13">
             <item index="0" class="java.lang.String" itemvalue="uk-navbar" />
             <item index="1" class="java.lang.String" itemvalue="uk-navbar-toggle-icon" />
             <item index="2" class="java.lang.String" itemvalue="uk-toggle" />
@@ -13,6 +13,11 @@
             <item index="5" class="java.lang.String" itemvalue="uk-sticky" />
             <item index="6" class="java.lang.String" itemvalue="uk-alert" />
             <item index="7" class="java.lang.String" itemvalue="uk-grid" />
+            <item index="8" class="java.lang.String" itemvalue="uk-slideshow" />
+            <item index="9" class="java.lang.String" itemvalue="uk-cover" />
+            <item index="10" class="java.lang.String" itemvalue="uk-slidenav-previous" />
+            <item index="11" class="java.lang.String" itemvalue="uk-slidenav-next" />
+            <item index="12" class="java.lang.String" itemvalue="uk-slideshow-item" />
           </list>
         </value>
       </option>
