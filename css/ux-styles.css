@@ -7,6 +7,10 @@
     color: aliceblue;
 }
 
+.uk-footer{
+    background-color: #1e87f0;
+}
+
 /*Bootstrap Grid System*/
 @-ms-viewport {
     /*width: device-width;*/
