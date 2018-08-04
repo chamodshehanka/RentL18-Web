@@ -1,7 +1,13 @@
 .hero-background {
-    width: 100%;
-    -webkit-background-size:cover;
     background-size: cover;
-    background: url('../images/hero-background-image.jpg') center;
-    height: 200px;
+    background: url('../images/hero-background-image.jpg') top;
+    height: 100vh;
+}
+
+.search-container{
+    background-color: #0D47A1;
+    opacity: 0.8;
+    width: 60%;
+    height: 30%;
+    padding-top: 50%;
 }
