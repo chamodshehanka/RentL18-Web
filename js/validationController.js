@@ -26,9 +26,9 @@ function validatePhoneNumber(data) {
 }
 
 function validateEmail(data) {
-    return /^$/.test(data);
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(data);
 }
 
 function validateName(data) {
-    return /[a-z]/.test(data);
+    return /^[A-Za-z-,]{3,20}?=.*\d/.test(data);
 }
