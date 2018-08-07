@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Adding a Vehicle</title>
+    <link href="images/icon.png" rel="shortcut icon">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--End Bootstrap CSS-->
+
+    <!-- UIKit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/css/uikit.min.css" />
+    <!--End UIKit CSS-->
+
 </head>
 <body>
 <form>
     <div>
        Vehicle Informations
-       Vehicle number
        <label>
-           <input type="text" name="vehicleNumber">
-
+           <input class="uk-input" type="text" placeholder="Vehicle Number" required>
            No of seats
            <input type="number" name="noOfSeats">
            No of seats available
