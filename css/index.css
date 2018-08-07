@@ -6,6 +6,19 @@
     margin-top: auto;
 }
 
+
+#banner-text{
+    font-family: 'Anton', sans-serif;
+    -webkit-text-fill-color: #ecf0f1;
+    font-size: 48px;
+    align-content: center;
+    top: 30%;
+    left: 10%;
+    right:10%;
+    position: absolute;
+    text-shadow: 1px 1px 15px black;
+}
+
 .card-button{
     margin-left: auto;
     margin-right: auto;
