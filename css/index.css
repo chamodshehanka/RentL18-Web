@@ -1,9 +1,10 @@
 .hero-background {
     background-size: cover;
-    background: url('../images/hero-background-image.png') top;
     height: 100vh;
     padding-top: 1%;
     margin-top: auto;
+    background: url("../images/hero-background-image.jpg") no-repeat fixed center;
+    background-size: cover;
 }
 
 #btn-search-vehicle{
