@@ -48,73 +48,30 @@
 </div>
 <!--End Header-->
 
-<form>
-    <div>
-       Vehicle Informations
-       <label>
-           <input class="uk-input" type="text" placeholder="Vehicle Number" required>
-           No of seats
-           <input type="number" name="noOfSeats">
-           No of seats available
-           <input type="number" name="noOfSeatsAvailable">
-           Charge per KM
-           <input type="number" name="charge"> <br>
-           Vehicle type
-           <input type="text" name="vehicleType">
-           AC
-           <input type="radio" name="ac" value="Yes" checked> Yes
-           <input type="radio" name="ac" value="No"> No<br>
-       </label>
-   </div>
-
-    Route Informations
-    <div>
-        <label>
-            From
-            <input type="text" name="from">
-            To
-            <input type="text" name="to"><br>
-            Driving Up
-            Start time
-            <input type="time" name="startTime">
-            End time
-            <input type="time" name="endTime">
-            Driving down
-            Start time
-            <input type="time" name="startTime">
-            End time
-            <input type="time" name="endTime"><br>
-            Stops
-            <input type="text" name="stop1"> <input type="text" name="stop1">   <input type="text" name="stop1"> <input type="text" name="stop1">  <input type="text" name="stop1"> <input type="text" name="stop1">
-        </label>
-        <button type="submit">Save</button>
-        <button type="reset">Cancel</button>
-    </div>
-    Bank details to get paid
-    <div>
-        <lable>
-            Cedit/Debit card number
-            <label>
-                <input type="number" name="cardNum">
-                CSV
-            </label>
-            <label>
-                <input type="number" name="csv">
-                Ex date
-            </label>
-            <label>
-                <input type="date" name="xDate">
-            </label>
-        </lable>
-
-    </div>
-    <div ALIGN="right">
-        <input type="submit" value="Submit">
-        <input type="reset" value="Cancel">
-    </div>
-
-
-</form>
+<!--Form Content-->
+<div class="container">
+    <ul uk-accordion="multiple: true">
+        <li class="uk-open">
+            <a class="uk-accordion-title" href="#">Vehicle Information</a>
+            <div class="uk-accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </li>
+        <li>
+            <a class="uk-accordion-title" href="#">Route Information</a>
+            <div class="uk-accordion-content">
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+            </div>
+        </li>
+        <li>
+            <a class="uk-accordion-title" href="#">Bank Details</a>
+            <div class="uk-accordion-content">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--End Form Content-->
 
 
 
