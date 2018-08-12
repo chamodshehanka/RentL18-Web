@@ -10,15 +10,18 @@ let EMAIL = 'email';
 let NAME = 'name';
 
 function validate(type, data) {
+    let result;
     switch (type){
-        case TEL: validatePhoneNumber(data);
+        case TEL: result = validatePhoneNumber(data);
             break;
-        case EMAIL: validateEmail(data);
+        case EMAIL: result = validateEmail(data);
             break;
-        case NAME: validateName(data);
+        case NAME: result = validateName(data);
             break;
         default: console.log("Invalid data type !!!");
     }
+
+    console.log(result);
 }
 
 function validatePhoneNumber(data) {
