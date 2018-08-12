@@ -7,12 +7,14 @@
 
 let email = $('#txtEmail').val();
 let password = $('#txtPassword').val();
-
+loginAction(email,password);
+console.log(email);
 function loginAction(email, password) {
-    if (email === 'admin@rent18.com' && password === 1234){
-        window.location.replace("../add-vehicle.html");
+    console.log(email + " " + password);
+    if ((email === 'admin@rent18.com' && password === 1234) || email === undefined){
+        window.location.replace('admin-dashboard.html');
     } else {
-
+        console.log("Invalid user");
     }
 }
 
