@@ -5,6 +5,3 @@
  * Time: 4:27 PM
  */
 
-function f() {
-    
-}
