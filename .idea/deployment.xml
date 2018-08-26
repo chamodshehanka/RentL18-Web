@@ -2,6 +2,13 @@
 <project version="4">
   <component name="PublishConfigData">
     <serverData>
+      <paths name="000webhost">
+        <serverdata>
+          <mappings>
+            <mapping deploy="public_html" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="Apache Server">
         <serverdata>
           <mappings>
