@@ -1,3 +1,26 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header-hide{
+    transition: transform 0.25s ease-in-out;
+}
+
+.main{
+    background-color: rgba(0,0,0,0.1);
+    height: 150vh;
+    padding-top: 70px;
+}
+.header-unpin{
+    transform: translateY(-65px);
+}
+.header-pin{
+    transform: translateY(0);
+}
+
 #nav-bar{
     background-color: #1e87f0;
 }
