@@ -1304,3 +1304,5 @@ html {
     max-width: 100%;
     height: auto;
 }
+
+img[alt="www.000webhost.com"]{display:none!important;}
