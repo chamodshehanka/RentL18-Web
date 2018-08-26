@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Add Company | Rent 18</title>
+    <link href="images/icon.png" rel="shortcut icon">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -55,5 +57,71 @@
 </div>
 <!--End Header-->
 
+<!--Form Content-->
+<div class="container">
+    <ul uk-accordion="multiple: true">
+        <li class="uk-open">
+            <a class="uk-accordion-title" href="#">Company Details</a>
+            <div class="uk-accordion-content">
+                <div class="row">
+                    <div class="col-md-3">
+                        <input class="uk-input" name="" type="text" placeholder="Company Name">
+                    </div>
+                    <div class="col-md-2">
+                        <input class="uk-input" name="" type="text" placeholder="Address line 1">
+                    </div>
+                    <div class="col-md-2">
+                        <input class="uk-input" name="" type="text" placeholder="Address line 2">
+                    </div>
+                    <div class="col-md-3">
+                        <input class="uk-input" name="" type="text" placeholder="Office Contact">
+                    </div>
+
+                    <div style="width: 100%;height: 50px"></div>
+
+                    <div class="col-md-3">
+                        <input class="uk-input" name="" type="text" placeholder="No of vehicles own">
+                    </div>
+
+                </div>
+            </div>
+        </li>
+
+        <li class="uk-open">
+            <a class="uk-accordion-title" href="#">Bank Details</a>
+            <div class="uk-accordion-content">
+                <div class="row">
+                    <div class="col-md-3">
+                        <input class="uk-input" name="" type="text" placeholder="Card Number">
+                    </div>
+                    <div class="col-md-1">
+                        <input class="uk-input" name="" type="text" placeholder="CSV">
+                    </div>
+                    <div class="col-md-3">
+                        <input class="uk-input" name="" type="date" placeholder="Exp Date">
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--End Form Content-->
+
+
+
+
+<!--JS Controllers-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- UIKit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit-icons.min.js"></script>
+<!--End UIKit JS-->
+
+<!--Bootstrap JS-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--End Bootstrap JS-->
+
+<script async src="js/validationController.js"></script>
+<!--End JS Controllers-->
 </body>
 </html>
