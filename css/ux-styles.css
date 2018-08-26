@@ -12,6 +12,19 @@ footer{
     color: white;
 }
 
+.footer-list-items-titles{
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+
+.footer-list-items{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    /*list-style: none;*/
+}
+
 footer a{
     text-decoration: none;
 }
