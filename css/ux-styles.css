@@ -12,12 +12,16 @@ footer{
     color: white;
 }
 
-.footer-logo{
-
+footer a{
+    text-decoration: none;
 }
 
-.parallax {
+.footer-nav{
 
+}
+.footer-logo{
+    font-family: 'Open Sans', sans-serif;
+    color: aliceblue;
 }
 
 .uk-footer{
