@@ -14,5 +14,5 @@ $connection = mysqli_connect("localhost","root","wampwamp","rentlioweb");
 if ($connection){
     echo '';
 }else{
-    echo '';
+    echo 'Connection failed!!!';
 }
