@@ -8,9 +8,15 @@ body{
 .btn-orange{
     background-color: #F29F05;
 }
+.btn-orange:hover{
+    background-color: #F28705;
+}
 
 .btn-blue{
     background-color: #0597F2;
+}
+.btn-blue:hover{
+    background-color: #2980b9;
 }
 
 .header-hide{

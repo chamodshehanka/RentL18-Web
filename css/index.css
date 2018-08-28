@@ -1,3 +1,7 @@
+#btn-sign-in{
+
+}
+
 .hero-background {
     background-size: cover;
     height: 100vh;
@@ -10,6 +14,10 @@
 #btn-search-vehicle{
     background-color: #F29F05;
     opacity : 1;
+}
+
+#btn-search-vehicle:hover{
+    background-color: #F28705;
 }
 
 #banner-text{
