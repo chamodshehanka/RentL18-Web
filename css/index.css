@@ -24,6 +24,10 @@
     text-shadow: 1px 1px 15px black;
 }
 
+.orange-text{
+    color: #fcb546;
+}
+
 .card-button{
     margin-left: auto;
     margin-right: auto;
