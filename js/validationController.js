@@ -37,8 +37,8 @@ function validateName(data) {
 }
 
 function loginActionSF () {
-    var userId = document.getElementById('txtEmail');
-    var password = document.getElementById('txtPassword');
+    let userId = document.getElementById('txtEmail');
+    let password = document.getElementById('txtPassword');
 
     if ( userId.value.length === 0) {
         document.getElementById('loginWarning').innerHTML = "* Please fill all fields *";
