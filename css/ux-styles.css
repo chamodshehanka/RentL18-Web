@@ -5,6 +5,14 @@ body{
     padding: 0;
 }
 
+.btn-orange{
+    background-color: #F29F05;
+}
+
+.btn-blue{
+    background-color: #0597F2;
+}
+
 .header-hide{
     transition: transform 0.25s ease-in-out;
 }
