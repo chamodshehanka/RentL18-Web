@@ -8,5 +8,7 @@
 
 class Driver
 {
-
+    private $driverID;
+    private $driverName;
+    private $driverTel;
 }
