@@ -12,7 +12,7 @@ $password = $_POST['password'];
 $connection = mysqli_connect("localhost","root","wampwamp","rentlioweb");
 
 if ($connection){
-    echo '';
+    echo 'Connection success';
 }else{
     echo 'Connection failed!!!';
 }
