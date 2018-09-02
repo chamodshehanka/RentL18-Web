@@ -6,8 +6,7 @@
  * Time: 7:08 PM
  */
 
-class Connection
-{
+class Connection{
     private $_connection;
     private static $_instance;
     private $_host = "HOST";
