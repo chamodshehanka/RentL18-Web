@@ -6,11 +6,10 @@
  * Time: 8:17 PM
  */
 
-/*IWT2018*/
 $userName = $_POST["email"];
 $password = $_POST['password'];
 
-$connection = mysqli_connect("localhost","root","wampwamp","rentlioweb");
+$connection = mysqli_connect("localhost","id6917641_rent18","IWT2018","id6917641_rent18");
 
 if ($connection){
     echo 'Connection success';
