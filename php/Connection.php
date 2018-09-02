@@ -28,11 +28,6 @@ class Connection
 
     /**
      * Connection constructor.
-     * @param $_connection
-     * @param string $_host
-     * @param string $_username
-     * @param string $_password
-     * @param string $_database
      */
     public function __construct()
     {
