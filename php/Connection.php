@@ -16,6 +16,17 @@ class Connection
     private $_database = "DATABASE";
 
     /**
+     * @return mixed
+     */
+    public static function getInstance()
+    {
+        if (!self::$_instance){
+            self::$_instance = new self();
+        }
+        return self::$_instance;
+    }
+
+    /**
      * Connection constructor.
      * @param $_connection
      * @param string $_host
@@ -25,19 +36,20 @@ class Connection
      */
     public function __construct($_connection, $_host, $_username, $_password, $_database)
     {
-        $this->_connection = $_connection;
-        $this->_host = $_host;
-        $this->_username = $_username;
-        $this->_password = $_password;
-        $this->_database = $_database;
+        $this->_connection = new mysqli($this->_host, $this->_username, $this->_password, $this->_database);
+
+        // Error handling
+        if(mysqli_connect_error()) {
+            trigger_error("Failed to connect to to MySQL: " . mysqli_connect_error(), E_USER_ERROR);
+        }
     }
 
     /**
-     * @return mixed
-     */
-    public function getConnection()
+     * @param mixed
+    */
+    private function __clone()
     {
-        return $this->_connection;
+        //
     }
 
     /**
@@ -47,86 +59,4 @@ class Connection
     {
         $this->_connection = $connection;
     }
-
-    /**
-     * @return mixed
-     */
-    public static function getInstance()
-    {
-        return self::$_instance;
-    }
-
-    /**
-     * @param mixed $instance
-     */
-    public static function setInstance($instance)
-    {
-        self::$_instance = $instance;
-    }
-
-    /**
-     * @return string
-     */
-    public function getHost()
-    {
-        return $this->_host;
-    }
-
-    /**
-     * @param string $host
-     */
-    public function setHost($host)
-    {
-        $this->_host = $host;
-    }
-
-    /**
-     * @return string
-     */
-    public function getUsername()
-    {
-        return $this->_username;
-    }
-
-    /**
-     * @param string $username
-     */
-    public function setUsername($username)
-    {
-        $this->_username = $username;
-    }
-
-    /**
-     * @return string
-     */
-    public function getPassword()
-    {
-        return $this->_password;
-    }
-
-    /**
-     * @param string $password
-     */
-    public function setPassword($password)
-    {
-        $this->_password = $password;
-    }
-
-    /**
-     * @return string
-     */
-    public function getDatabase()
-    {
-        return $this->_database;
-    }
-
-    /**
-     * @param string $database
-     */
-    public function setDatabase($database)
-    {
-        $this->_database = $database;
-    }
-
-
 }
