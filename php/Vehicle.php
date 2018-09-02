@@ -8,5 +8,5 @@
 
 class Vehicle
 {
-
+    private $vehicleID;
 }
