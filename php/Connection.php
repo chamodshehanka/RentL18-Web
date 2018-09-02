@@ -34,11 +34,11 @@ class Connection
      * @param string $_password
      * @param string $_database
      */
-    public function __construct($_connection, $_host, $_username, $_password, $_database)
+    public function __construct()
     {
         $this->_connection = new mysqli($this->_host, $this->_username, $this->_password, $this->_database);
 
-        // Error handling
+        // Exception handling
         if(mysqli_connect_error()) {
             trigger_error("Failed to connect to to MySQL: " . mysqli_connect_error(), E_USER_ERROR);
         }
