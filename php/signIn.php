@@ -10,7 +10,12 @@ function login(){
     $userName = $_POST["email"];
     $password = $_POST['password'];
 
-    $connection = mysqli_connect("localhost","id6917641_rent18","IWT2018","id6917641_rent18");
+    $connection = mysqli_connect(
+        "localhost",
+        "id6917641_rent18",
+        "IWT2018",
+        "id6917641_rent18"
+    );
 
     if ($connection){
         $resultSet = mysqli_query($connection, "SELECT * FROM users");
