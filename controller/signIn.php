@@ -26,7 +26,7 @@ function loginPHP(){
         "rentlioweb"
     );
 
-    if ($connectionLocal){
+    if ($connection){
         $resultSet = mysqli_query($connection, "SELECT * FROM users");
 
         if ($resultSet){
