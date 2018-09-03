@@ -15,6 +15,23 @@ class Connection{
     private $_database = "DATABASE";
 
     /**
+     * Connection constructor.
+     * @param $_connection
+     * @param string $_host
+     * @param string $_username
+     * @param string $_password
+     * @param string $_database
+     */
+    public function __construct($_connection, $_host, $_username, $_password, $_database)
+    {
+        $this->_connection = $_connection;
+        $this->_host = $_host;
+        $this->_username = $_username;
+        $this->_password = $_password;
+        $this->_database = $_database;
+    }
+
+    /**
      * @return mixed
      */
     public static function getInstance()
@@ -28,7 +45,7 @@ class Connection{
     /**
      * Connection constructor.
      */
-    public function __construct()
+    /*public function __construct()
     {
         $this->_connection = new mysqli($this->_host, $this->_username, $this->_password, $this->_database);
 
@@ -36,7 +53,7 @@ class Connection{
         if(mysqli_connect_error()) {
             trigger_error("Failed to connect to to MySQL: " . mysqli_connect_error(), E_USER_ERROR);
         }
-    }
+    }*/
 
     /**
      * @param mixed
