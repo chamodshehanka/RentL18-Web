@@ -8,7 +8,7 @@
 require_once ("controller/Connection.php");
 
 $db = Connection::getInstance();
-
+$conn = $db->getConnection();
 ?>
 
 <!DOCTYPE html>
