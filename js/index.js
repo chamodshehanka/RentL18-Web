@@ -5,7 +5,7 @@
  * Time: 4:27 PM
  */
 
-let email = $('#txtEmail').val();
+/*let email = $('#txtEmail').val();
 let password = $('#txtPassword').val();
 loginAction(email,password);
 console.log(email);
@@ -16,5 +16,5 @@ function loginAction(email, password) {
     } else {
         console.log("Invalid user");
     }
-}
+}*/
 

@@ -9,10 +9,10 @@
 class Connection{
     private $_connection;
     private static $_instance;
-    private $_host = "HOST";
-    private $_username = "USERNAME";
-    private $_password = "PASSWORD";
-    private $_database = "DATABASE";
+    private $_host = "localhost";
+    private $_username = "root";
+    private $_password = "wampwamp";
+    private $_database = "rentlioweb";
 
     /**
      * @return mixed
