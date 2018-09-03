@@ -6,7 +6,7 @@
  * Time: 8:17 PM
  */
 
-function login(){
+function loginPHP(){
     $userName = $_POST["email"];
     $password = $_POST['password'];
 
@@ -17,7 +17,14 @@ function login(){
         "id6917641_rent18"
     );
 
-    if ($connection){
+    $connectionLocal = mysqli_connect(
+        "localhost",
+        "root",
+        "wampwamp",
+        "rentlioweb"
+    );
+
+    if ($connectionLocal){
         $resultSet = mysqli_query($connection, "SELECT * FROM users");
 
         if ($resultSet){

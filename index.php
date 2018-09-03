@@ -5,10 +5,12 @@
  * Date: 9/3/2018
  * Time: 10:47 PM
  */
-require_once ("controller/Connection.php");
+//require_once ("controller/Connection.php");
 
+//$db = Connection::getInstance();
 
-
+//require ("controller/signIn.php");
+include ("controller/signIn.php");
 ?>
 
 <!DOCTYPE html>
@@ -155,7 +157,7 @@ require_once ("controller/Connection.php");
             </div>
 
             <div style="float: right">
-                <button id="btnSignIn" class="uk-button uk-button-primary" onclick="">Sign In</button>
+                <button id="btnSignIn" class="uk-button uk-button-primary" onclick="login()">Sign In</button>
             </div>
         </form>
         <br><br>
@@ -448,6 +450,13 @@ require_once ("controller/Connection.php");
 <!-- Ioinic icons -->
 <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
 <!--End Icons-->
+
+<script type="text/javascript">
+    function login() {
+        $.get("controller/signIn.php");
+        return false;
+    }
+</script>
 <!--End JS Controllers-->
 </body>
 </html>
