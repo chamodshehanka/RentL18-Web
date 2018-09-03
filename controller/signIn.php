@@ -10,6 +10,8 @@ function loginPHP(){
     $userName = $_POST["email"];
     $password = $_POST['password'];
 
+    echo $userName;
+
     $connection = mysqli_connect(
         "localhost",
         "id6917641_rent18",
