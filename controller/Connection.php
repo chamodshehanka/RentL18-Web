@@ -35,24 +35,16 @@ class Connection{
                 'mysql:host='.$this->_host.';dbName='.$this->_database,
                 $this->_username, $this->_password
             );
+            $this->_connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }catch (PDOException $exception){
             die("Failed to connect to DB : ". $exception->getMessage());
         }
-        /*$this->_connection = new mysqli($this->_host, $this->_username, $this->_password, $this->_database);
-
-        // Exception handling
-        if(mysqli_connect_error()) {
-            trigger_error("Failed to connect to to MySQL: " . mysqli_connect_error(), E_USER_ERROR);
-        }*/
     }
 
     /**
      * @param mixed
     */
-    private function __clone()
-    {
-        //
-    }
+    private function __clone(){}
 
     /**
      * @param mixed $connection
@@ -61,4 +53,15 @@ class Connection{
     {
         $this->_connection = $connection;
     }
+
+    /**
+     * @return PDO
+     */
+    public function getConnection()
+    {
+        return $this->_connection;
+    }
 }
+
+$db = Connection::getInstance();
+$conn = $db->getConnection();
