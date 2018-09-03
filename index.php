@@ -9,8 +9,6 @@ require_once ("controller/Connection.php");
 
 $db = Connection::getInstance();
 
-//require ("controller/signIn.php");
-//include ("controller/signIn.php");
 ?>
 
 <!DOCTYPE html>
