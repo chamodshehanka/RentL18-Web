@@ -32,7 +32,7 @@ class Connection{
     {
         try{
             $this->_connection = new PDO(
-                'mysql:host='.$this->_host.';dbName='.$this->_database,
+                'mysql:host='.$this->_host.';dbname='.$this->_database,
                 $this->_username, $this->_password
             );
             $this->_connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
