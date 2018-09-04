@@ -304,6 +304,6 @@ $conn = $db->getConnection();
     </div>
 </div>
 <!--End Featured Section-->
-
+<?php include 'footer.php' ?>
 </body>
 </html>
