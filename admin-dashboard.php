@@ -84,7 +84,7 @@
                 <button class="uk-button uk-button-primary btn-side-nav">DASHBOARD</button><br>
                 <div class=""></div>
                 <button class="uk-button uk-button-primary btn-side-nav">COMPANIES</button><br>
-                <a href="add-vehicle.html"><button class="uk-button uk-button-primary btn-side-nav">VEHICLES</button></a><br>
+                <a href="add-vehicle.php"><button class="uk-button uk-button-primary btn-side-nav">VEHICLES</button></a><br>
                 <button class="uk-button uk-button-primary btn-side-nav">DRIVERS</button><br>
                 <button class="uk-button uk-button-primary btn-side-nav">PARENTS</button><br>
                 <button class="uk-button uk-button-primary btn-side-nav">STUDENTS</button><br>
