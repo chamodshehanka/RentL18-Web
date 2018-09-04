@@ -16,7 +16,6 @@ $conn = $db->getConnection();
 <head>
     <meta charset="UTF-8">
     <title>Rent 18 | Student Transport Service</title>
-    <link href="images/icon.png" rel="shortcut icon">
 
     <!--SEO-->
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
@@ -37,17 +36,6 @@ $conn = $db->getConnection();
     <meta name="google-site-verification" content="-6pThEjIUfFf0ZfA_IWSLmsVX7tL-HquC03Apt-d8S0" />
     <!--Site Verification-->
 
-    <!--Remove banner-->
-    <link rel="stylesheet" href="http://chamodshehanka.com/assets/removewebhost.css">
-
-    <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!--End Bootstrap CSS-->
-
-    <!-- UIKit CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/css/uikit.min.css" />
-    <!--End UIKit CSS-->
-
     <!--Critical CSS-->
     <style>
         #search-container{
@@ -62,13 +50,8 @@ $conn = $db->getConnection();
 
     <!--Custom CSS-->
     <link href="css/index.css" rel="stylesheet">
-    <link href="css/ux-styles.css" rel="stylesheet">
     <!--End Custom CSS-->
 
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-    <!--End Google fonts-->
 </head>
 
 <body>
