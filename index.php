@@ -118,7 +118,6 @@ $conn = $db->getConnection();
                             <option>Bus</option>
                         </select>
                     </label>
-
                 </div>
 
                 <div class="col-sm-3">
