@@ -51,7 +51,7 @@ $conn = $db->getConnection();
     <!--Custom CSS-->
     <link href="css/index.css" rel="stylesheet">
     <!--End Custom CSS-->
-
+    <?php include 'header-tags.php' ?>
 </head>
 
 <body>
