@@ -33,7 +33,7 @@ function loginPHP(){
             $resultArray = mysqli_fetch_all($resultSet);
             foreach ($resultArray as $rowData){
                 if ($userName == $rowData[0] and $password == $rowData[1]){
-                    header('Location: '.'../admin-dashboard.html');
+                    header('Location: '.'../admin-dashboard.php');
                 }else{
                     dir("Error");
                 }

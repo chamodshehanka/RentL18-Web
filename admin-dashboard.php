@@ -1,3 +1,12 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: chamodshehanka
+ * Date: 9/5/2018
+ * Time: 1:11 AM
+ */
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,11 +37,11 @@
 <div uk-sticky="media: 960" class="uk-navbar-container tm-navbar-container uk-sticky uk-sticky-fixed" style="position: fixed; top: 0; width: 1349px;background-color: #1e87f0">
     <div class="uk-container uk-container-expand">
         <nav class="uk-navbar"><div class="uk-navbar-left">
-            <a id="nav-logo-name" href="#" class="uk-navbar-item uk-logo" style="color: azure;">
-                <img src="images/icon.png" class="uk-margin-small-right" width="50" height="50">
-                Rent 18
-            </a>
-        </div>
+                <a id="nav-logo-name" href="#" class="uk-navbar-item uk-logo" style="color: azure;">
+                    <img src="images/icon.png" class="uk-margin-small-right" width="50" height="50">
+                    Rent 18
+                </a>
+            </div>
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav uk-visible@m">
                     <li>
