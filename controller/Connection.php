@@ -36,6 +36,9 @@ class Connection{
                 $this->_username, $this->_password
             );
             $this->_connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            ?><script>
+                console.log("Connection created!");
+            </script> <?php
         }catch (PDOException $exception){
             die("Failed to connect to DB : ". $exception->getMessage());
         }
