@@ -21,9 +21,7 @@
                     <li>
                         <div class="uk-width-auto">
                             <div class="uk-inline">
-                                <!--<button class="uk-button uk-button-default" style="border: 0" type="button" uk-toggle="target: #offcanvas-flip">-->
                                 <a href="" class="uk-icon-menu" uk-icon="menu" uk-toggle="target: #offcanvas-flip"></a>
-                                <!--</button>-->
 
                                 <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
 
