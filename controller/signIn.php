@@ -10,8 +10,6 @@
 $userName = $_POST["email"];
 $password = $_POST['password'];
 
-echo $userName;
-
 $connection = mysqli_connect(
     "localhost",
     "id6917641_rent18",
@@ -19,14 +17,14 @@ $connection = mysqli_connect(
     "id6917641_rent18"
 );
 
-$connectionLocal = mysqli_connect(
+/*$connectionLocal = mysqli_connect(
     "localhost",
     "root",
     "wampwamp",
     "rentlioweb"
-);
+);*/
 
-if ($connectionLocal){
+/*if ($connectionLocal){
     $resultSet = mysqli_query($connectionLocal, "SELECT * FROM users");
 
     if ($resultSet){
@@ -39,7 +37,7 @@ if ($connectionLocal){
             }
         }
     }
-}else if ($connection){
+}else */if ($connection){
     $resultSet = mysqli_connect($connection,'SELECT * FROM users');
 
     if ($resultSet){
