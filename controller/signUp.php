@@ -8,6 +8,13 @@
 
 include 'connect.php';
 
+$firstName = $_POST['firstName'];
+$lastName = $_POST['lastName'];
+$email = $_POST['email'];
+$phoneNumber = $_POST['phoneNumber'];
+$gender = $_POST['gender'];
+$password = $_POST['password'];
+
 if ($connection){
     echo '';
 }else{

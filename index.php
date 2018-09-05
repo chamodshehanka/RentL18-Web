@@ -159,21 +159,21 @@ $conn = $db->getConnection();
         <div uk-grid>
             <div class="uk-grid">
                 <div class="uk-width-1-2">
-                    <input class="uk-input" type="text" placeholder="First Name" required>
+                    <input class="uk-input" name="firstName" type="text" placeholder="First Name" required>
                 </div>
 
                 <div class="uk-width-1-2">
-                    <input class="uk-input" type="text" placeholder="Last Name" required>
+                    <input class="uk-input" name="lastName" type="text" placeholder="Last Name" required>
                 </div>
 
                 <div style="height: 7px"></div>
                 <div class="uk-width-1-1">
-                    <input class="uk-input" type="email" placeholder="Email Address" required>
+                    <input class="uk-input" name="email" type="email" placeholder="Email Address" required>
                 </div>
 
                 <div style="height: 7px"></div>
                 <div class="uk-width-1-1">
-                    <input class="uk-input" type="text" placeholder="Phone Number" required>
+                    <input class="uk-input" name="phoneNumber" type="text" placeholder="Phone Number" required>
                 </div>
 
                 <div style="height: 10px"></div>
@@ -182,24 +182,24 @@ $conn = $db->getConnection();
                 <div class="row"></div>
 
                 <div class="uk-width-1-5">
-                    <label><input class="uk-radio" type="radio" name="radioButton" checked> Parent</label>
+                    <label><input class="uk-radio" type="radio" name="gender" checked> Parent</label>
                 </div>
 
                 <div class="uk-width-1-5">
-                    <label><input class="uk-radio" type="radio" name="radioButton"> Student</label>
+                    <label><input class="uk-radio" type="radio" name="gender"> Student</label>
                 </div>
 
                 <div class="uk-width-1-5">
-                    <label><input class="uk-radio" type="radio" name="radioButton"> Vehicle Owner</label>
+                    <label><input class="uk-radio" type="radio" name="gender"> Vehicle Owner</label>
                 </div>
 
                 <div class="uk-width-1-5">
-                    <label><input class="uk-radio" type="radio" name="radioButton">Business Owner</label>
+                    <label><input class="uk-radio" type="radio" name="gender">Business Owner</label>
                 </div>
 
                 <div style="height: 7px"></div>
                 <div class="uk-width-1-1">
-                    <input class="uk-input" type="password" placeholder="Password" required>
+                    <input class="uk-input" name="password" type="password" placeholder="Password" required>
                 </div>
 
                 <div style="height: 7px"></div>
