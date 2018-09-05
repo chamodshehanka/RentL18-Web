@@ -6,5 +6,4 @@
  * Time: 8:19 PM
  */
 
-mysqli_connect('localhost','root','wampwamp');
-mysql_select_db('rentlioweb');
+$connection = mysqli_connect('localhost','root','wampwamp','rentlioweb');
