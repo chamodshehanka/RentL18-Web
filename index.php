@@ -128,7 +128,7 @@ $conn = $db->getConnection();
         <button class="uk-modal-close-outside" type="button" uk-close></button>
         <h2 class="uk-modal-title">Sign In</h2>
 
-        <form>
+        <form action="controller/signIn.php" method="post">
             <div class="uk-margin">
                 <input id="txtEmail" class="uk-input" name="email" type="email" placeholder="Email or User Name">
             </div>
@@ -138,7 +138,7 @@ $conn = $db->getConnection();
             </div>
 
             <div style="float: right">
-                <button id="btnSignIn" class="uk-button uk-button-primary" onclick="login()">Sign In</button>
+                <button id="btnSignIn" class="uk-button uk-button-primary" type="submit" onclick="login()">Sign In</button>
             </div>
         </form>
         <br><br>
