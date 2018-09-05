@@ -12,12 +12,12 @@ $password = $_POST['password'];
 
 echo $userName;
 
-/*$connection = mysqli_connect(
+$connection = mysqli_connect(
     "localhost",
     "id6917641_rent18",
     "IWT2018",
     "id6917641_rent18"
-);*/
+);
 
 $connectionLocal = mysqli_connect(
     "localhost",
@@ -32,10 +32,21 @@ if ($connectionLocal){
     if ($resultSet){
         $resultArray = mysqli_fetch_all($resultSet);
         foreach ($resultArray as $rowData){
-            echo $rowData[0];
-            echo $rowData[1];
             if ($userName == $rowData[0] and $password == $rowData[1]){
                     header('Location: '.'../admin-dashboard.php');
+            }else{
+                echo 'Failed to login';
+            }
+        }
+    }
+}else if ($connection){
+    $resultSet = mysqli_connect($connection,'SELECT * FROM users');
+
+    if ($resultSet){
+        $resultArray = mysqli_fetch_all($resultSet);
+        foreach ($resultArray as $rowData){
+            if ($userName == $rowData[0] and $password == $rowData[1]){
+                header('Location: '.'../admin-dashboard.php');
             }else{
                 echo 'Failed to login';
             }
