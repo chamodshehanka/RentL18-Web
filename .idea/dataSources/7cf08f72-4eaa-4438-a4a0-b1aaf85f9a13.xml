@@ -954,7 +954,7 @@
     <table id="242" parent="11" name="users"/>
     <column id="243" parent="242" name="username">
       <Position>1</Position>
-      <DataType>varchar(10)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
