@@ -20,8 +20,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/css/uikit.min.css" />
 <!--End UIKit CSS-->
 
+<!--Custom CSS-->
 <link href="css/ux-styles.css" rel="stylesheet">
-
+<!--End Custom CSS-->
 
 <!--Google Fonts-->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">

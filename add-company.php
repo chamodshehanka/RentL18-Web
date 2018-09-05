@@ -12,25 +12,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Add Company | Rent 18</title>
-    <link href="images/icon.png" rel="shortcut icon">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!--End Bootstrap CSS-->
-
-    <!-- UIKit CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/css/uikit.min.css" />
-    <!--End UIKit CSS-->
-
-    <!--Custom CSS-->
-    <link href="css/ux-styles.css" rel="stylesheet">
-    <!--Custom CSS-->
-
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <!--End Google Fonts-->
-
+    <?php include 'header-tags.php' ?>
 </head>
 <body>
 
@@ -120,20 +103,6 @@
 <!--End Form Content-->
 
 
-
-
-<!--JS Controllers-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- UIKit JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit-icons.min.js"></script>
-<!--End UIKit JS-->
-
-<!--Bootstrap JS-->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!--End Bootstrap JS-->
-
-<script async src="js/validationController.js"></script>
-<!--End JS Controllers-->
+<?php include 'footer.php' ?>
 </body>
 </html>
