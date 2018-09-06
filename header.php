@@ -27,7 +27,7 @@
 
                                 <div uk-drop>
                                     <div class="uk-card uk-card-body uk-card-default">
-                                        <h4>John Doe</h4>
+                                        <h4 id="navUserName">John Doe</h4>
                                         Account details<br>
                                         <button class="uk-button uk-button-danger">Sign Out</button>
                                     </div>

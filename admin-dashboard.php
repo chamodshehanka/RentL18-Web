@@ -6,13 +6,7 @@
  * Time: 1:11 AM
  */
 
-$cookie_name ='user';
-if(!isset($_COOKIE[$cookie_name])) {
-    echo "Cookie named '" . $cookie_name . "' is not set!";
-} else {
-    echo "Cookie '" . $cookie_name . "' is set!<br>";
-    echo "Value is: " . $_COOKIE[$cookie_name];
-}
+include 'controller/setUserDetails.php';
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +24,7 @@ if(!isset($_COOKIE[$cookie_name])) {
 <?php include 'side-menu.php'?>
 
 <!--Body section-->
-
+<div style="width: 100%;height: 500px"></div>
 <!--End Body section-->
 
 <?php include 'footer.php'?>
