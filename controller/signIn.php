@@ -60,3 +60,17 @@ function createUserCookie($name){
 
     setcookie($cookie_Name, $cookie_Value, time() + (86400 * 30)); //86400 * 30 -> 1 day
 }
+
+if(count($_COOKIE) > 0) {
+    ?>
+    <script>
+        console.log("Cookies are enabled");
+    </script>
+    <?php
+} else {
+    ?>
+    <script>
+        console.log("Cookies are disabled!");
+    </script>
+    <?php
+}
