@@ -16,7 +16,7 @@ if(isset($_COOKIE[$cookie_name])) {
     <script type="text/javascript">
         let userName = "<?php echo $userName; ?>";
         console.log(userName);
-        $('#navUserName').val('hello '+userName)
+        $('#navUserName').val('hello '+userName);
 
     </script>
     <?php
