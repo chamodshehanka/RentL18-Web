@@ -10,6 +10,10 @@ require_once "controller/Connection.php";
 $db = Connection::getInstance();
 $conn = $db->getConnection();
 
+$cookie_Name = 'user';
+$cookie_Value = 'Chamod Shehanka';
+
+setcookie($cookie_Name, $cookie_Value, time() + (86400 * 30),'/'); //86400 * 30 -> 1 day
 ?>
 
 <!DOCTYPE html>
@@ -289,5 +293,16 @@ $conn = $db->getConnection();
 </div>
 <!--End Featured Section-->
 <?php include 'footer.php' ?>
+<?php
+
+$cookie_name ='user';
+if(!isset($_COOKIE[$cookie_name])) {
+    echo "Cookie named '" . $cookie_name . "' is not set!";
+} else {
+    echo "Cookie '" . $cookie_name . "' is set!<br>";
+    echo "Value is: " . $_COOKIE[$cookie_name];
+}
+
+?>
 </body>
 </html>

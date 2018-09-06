@@ -17,14 +17,14 @@ $connection = mysqli_connect(
     "id6917641_rent18"
 );
 
-/*$connectionLocal = mysqli_connect(
+$connectionLocal = mysqli_connect(
     "localhost",
     "root",
     "wampwamp",
     "rentlioweb"
-);*/
+);
 
-/*if ($connectionLocal){
+if ($connectionLocal){
     $resultSet = mysqli_query($connectionLocal, "SELECT * FROM users");
 
     if ($resultSet){
@@ -37,13 +37,14 @@ $connection = mysqli_connect(
             }
         }
     }
-}else */if ($connection){
+}else if ($connection){
     $resultSet = mysqli_connect($connection,'SELECT * FROM users');
 
     if ($resultSet){
         $resultArray = mysqli_fetch_all($resultSet);
         foreach ($resultArray as $rowData){
             if ($userName == $rowData[0] and $password == $rowData[1]){
+                createUserCookie($userName);
                 header('Location: '.'../admin-dashboard.php');
             }else{
                 echo 'Failed to login';
@@ -58,7 +59,7 @@ function createUserCookie($name){
     $cookie_Name = 'user';
     $cookie_Value = $name;
 
-    setcookie($cookie_Name, $cookie_Value, time() + (86400 * 30)); //86400 * 30 -> 1 day
+    setcookie($cookie_Name, $cookie_Value, time() + (86400 * 30),'/'); //86400 * 30 -> 1 day
 }
 
 if(count($_COOKIE) > 0) {
