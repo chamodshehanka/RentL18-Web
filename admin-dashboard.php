@@ -5,8 +5,6 @@
  * Date: 9/5/2018
  * Time: 1:11 AM
  */
-
-include 'controller/setUserDetails.php';
 ?>
 
 <!DOCTYPE html>
@@ -28,5 +26,6 @@ include 'controller/setUserDetails.php';
 <!--End Body section-->
 
 <?php include 'footer.php'?>
+<?php include 'controller/setUserDetails.php';?>
 </body>
 </html>
