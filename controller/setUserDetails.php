@@ -14,7 +14,6 @@ if(isset($_COOKIE[$cookie_name])) {
         let userName = "<?php echo $userName; ?>";
         console.log(userName);
         $("#navUserName").wrapInner(userName);
-
     </script>
     <?php
 } else {
