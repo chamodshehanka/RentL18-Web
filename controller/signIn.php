@@ -58,7 +58,6 @@ if ($connectionLocal){
 function createUserCookie($name){
     $cookie_Name = 'user';
     $cookie_Value = $name;
-
     setcookie($cookie_Name, $cookie_Value, time() + (86400 * 30),'/'); //86400 * 30 -> 1 day
 }
 
