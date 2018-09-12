@@ -8,7 +8,16 @@
 
 class Driver
 {
+    /**
+     * @var
+     */
     private $driverID;
+    /**
+     * @var
+     */
     private $driverName;
+    /**
+     * @var
+     */
     private $driverTel;
 }
