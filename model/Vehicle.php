@@ -8,10 +8,25 @@
 
 class Vehicle
 {
+    /**
+     * @var
+     */
     private $vehicleID;
+    /**
+     * @var
+     */
     private $vehicleNumber;
+    /**
+     * @var
+     */
     private $noOfSeats;
+    /**
+     * @var
+     */
     private $availableSeats;
+    /**
+     * @var
+     */
     private $chargePerKm;
 
     /**
