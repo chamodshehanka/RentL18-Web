@@ -52,12 +52,12 @@ function loginActionSF () {
 }
 
 function signupActionSF() {
-    var firstName = document.getElementById('firstname');
-    var lastName = document.getElementById('lastname');
-    var emailAddress = document.getElementById('emamiladdress');
-    var phoneNumber = document.getElementById('phonenumber');
-    var signUpPassword = document.getElementById('signuppassword');
-    var signUpConfirmPassword = document.getElementById('signupcofirmpassword');
+    let firstName = document.getElementById('firstname');
+    let lastName = document.getElementById('lastname');
+    let emailAddress = document.getElementById('emamiladdress');
+    let phoneNumber = document.getElementById('phonenumber');
+    let signUpPassword = document.getElementById('signuppassword');
+    let signUpConfirmPassword = document.getElementById('signupcofirmpassword');
 
     if ( firstName.value.length === 0 ) {
         document.getElementById('signupFormWarning').innerHTML = " * Please fill all fields * ";
@@ -102,7 +102,7 @@ function signupActionSF() {
     }
 
     function emailValidation ( inputText, alertMsg ) {
-        var emailExp = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+        let emailExp = /^[\w\-.+]+@[a-zA-Z0-9.\-]+\.[a-zA-z0-9]{2,4}$/;
 
         if ( inputText.value.match(emailExp)) {
             return true;
