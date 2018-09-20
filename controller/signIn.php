@@ -25,7 +25,7 @@ $connectionLocal = mysqli_connect(
 );
 
 if ($connectionLocal){
-    $resultSet = mysqli_query($connectionLocal, "SELECT * FROM users");
+    $resultSet = mysqli_query($connectionLocal, "SELECT * FROM admin");
 
     if ($resultSet){
         $resultArray = mysqli_fetch_all($resultSet);
@@ -38,7 +38,7 @@ if ($connectionLocal){
         }
     }
 }else if ($connection){
-    $resultSet = mysqli_connect($connection,'SELECT * FROM users');
+    $resultSet = mysqli_connect($connection,'SELECT * FROM admin');
 
     if ($resultSet){
         $resultArray = mysqli_fetch_all($resultSet);
