@@ -160,71 +160,74 @@ setcookie($cookie_Name, $cookie_Value, time() + (86400 * 30),'/'); //86400 * 30 
         <button class="uk-modal-close-outside" type="button" uk-close></button>
         <h2 class="uk-modal-title">Sign Up</h2>
 
-        <div uk-grid>
-            <div class="uk-grid">
-                <div class="uk-width-1-2">
-                    <input class="uk-input" name="firstName" type="text" placeholder="First Name" required>
-                </div>
+        <form action="controller/signUp.php" method="post">
+            <div uk-grid>
+                <div class="uk-grid">
+                    <div class="uk-width-1-2">
+                        <input class="uk-input" name="firstName" type="text" placeholder="First Name" required>
+                    </div>
 
-                <div class="uk-width-1-2">
-                    <input class="uk-input" name="lastName" type="text" placeholder="Last Name" required>
-                </div>
+                    <div class="uk-width-1-2">
+                        <input class="uk-input" name="lastName" type="text" placeholder="Last Name" required>
+                    </div>
 
-                <div style="height: 7px"></div>
-                <div class="uk-width-1-1">
-                    <input class="uk-input" name="email" type="email" placeholder="Email Address" required>
-                </div>
+                    <div style="height: 7px"></div>
+                    <div class="uk-width-1-1">
+                        <input class="uk-input" name="email" type="email" placeholder="Email Address" required>
+                    </div>
 
-                <div style="height: 7px"></div>
-                <div class="uk-width-1-1">
-                    <input class="uk-input" name="phoneNumber" type="text" placeholder="Phone Number" required>
-                </div>
+                    <div style="height: 7px"></div>
+                    <div class="uk-width-1-1">
+                        <input class="uk-input" name="phoneNumber" type="text" placeholder="Phone Number" required>
+                    </div>
 
-                <div style="height: 10px"></div>
+                    <div style="height: 10px"></div>
 
-                <!--Adding bootstrap grid system-->
-                <div class="row"></div>
+                    <!--Adding bootstrap grid system-->
+                    <div class="row"></div>
 
-                <div class="uk-width-1-5">
-                    <label><input class="uk-radio" type="radio" name="gender" checked> Parent</label>
-                </div>
+                    <div class="uk-width-1-5">
+                        <label><input class="uk-radio" type="radio" name="userType" value="parent" checked> Parent</label>
+                    </div>
 
-                <div class="uk-width-1-5">
-                    <label><input class="uk-radio" type="radio" name="gender"> Student</label>
-                </div>
+                    <div class="uk-width-1-5">
+                        <label><input class="uk-radio" type="radio" name="userType" value="student"> Student</label>
+                    </div>
 
-                <div class="uk-width-1-5">
-                    <label><input class="uk-radio" type="radio" name="gender"> Vehicle Owner</label>
-                </div>
+                    <div class="uk-width-1-5">
+                        <label><input class="uk-radio" type="radio" name="userType" value="company"> Vehicle Owner</label>
+                    </div>
 
-                <div class="uk-width-1-5">
-                    <label><input class="uk-radio" type="radio" name="gender">Business Owner</label>
-                </div>
+                    <div class="uk-width-1-5">
+                        <label><input class="uk-radio" type="radio" name="userType" value="driver">Driver</label>
+                    </div>
 
-                <div style="height: 7px"></div>
-                <div class="uk-width-1-1">
-                    <input class="uk-input" name="password" type="password" placeholder="Password" required>
-                </div>
+                    <div style="height: 7px"></div>
+                    <div class="uk-width-1-1">
+                        <input class="uk-input" name="password" type="password" placeholder="Password" required>
+                    </div>
 
-                <div style="height: 7px"></div>
-                <div class="uk-width-1-1">
-                    <input class="uk-input" type="password" placeholder="Confirm Password" required>
-                </div>
+                    <div style="height: 7px"></div>
+                    <div class="uk-width-1-1">
+                        <input class="uk-input" type="password" placeholder="Confirm Password" required>
+                    </div>
 
-                <div style="height: 7px"></div>
-                <div class="uk-width-1-1">
-                    <label>
-                        <input class="uk-checkbox" type="checkbox" required>
-                        I agree to the terms and conditions.
-                    </label>
+                    <div style="height: 7px"></div>
+                    <div class="uk-width-1-1">
+                        <label>
+                            <input class="uk-checkbox" type="checkbox" required>
+                            I agree to the terms and conditions.
+                        </label>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div style="height: 7px"></div>
-        <div style="float: right">
-            <button id="btnSignUp" class="uk-button uk-button-primary">Sign Up</button>
-        </div>
+            <div style="height: 7px"></div>
+            <div style="float: right">
+                <button id="btnSignUp" class="uk-button uk-button-primary" type="submit">Sign Up</button>
+            </div>
+        </form>
+
         <div style="height: 22px"></div>
         <div class="uk-alert-primary" uk-alert>
             <a class="uk-alert-close" uk-close></a>
