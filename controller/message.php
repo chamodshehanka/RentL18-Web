@@ -6,7 +6,7 @@
  * Time: 11:19 PM
  */
 
-include "header.php"
+//include "header.php"
 ?>
 <div id="message">
     <?php
@@ -40,5 +40,5 @@ include "header.php"
     ?>
 </div>
 <?php
-include "footer.php"
+//include "footer.php"
 ?>

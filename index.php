@@ -173,6 +173,11 @@ setcookie($cookie_Name, $cookie_Value, time() + (86400 * 30),'/'); //86400 * 30 
 
                     <div style="height: 7px"></div>
                     <div class="uk-width-1-1">
+                        <input class="uk-input" name="address" type="text" placeholder="Address" required>
+                    </div>
+
+                    <div style="height: 7px"></div>
+                    <div class="uk-width-1-1">
                         <input class="uk-input" name="email" type="email" placeholder="Email Address" required>
                     </div>
 
@@ -296,16 +301,5 @@ setcookie($cookie_Name, $cookie_Value, time() + (86400 * 30),'/'); //86400 * 30 
 </div>
 <!--End Featured Section-->
 <?php include 'footer.php' ?>
-<?php
-
-$cookie_name ='user';
-if(!isset($_COOKIE[$cookie_name])) {
-    echo "Cookie named '" . $cookie_name . "' is not set!";
-} else {
-    echo "Cookie '" . $cookie_name . "' is set!<br>";
-    echo "Value is: " . $_COOKIE[$cookie_name];
-}
-
-?>
 </body>
 </html>
