@@ -28,8 +28,8 @@
                                 <div uk-drop = "mode:click">
                                     <div class="uk-card uk-card-body uk-card-default">
                                         <h4 id="navUserName"></h4>
-                                        Account details<br>
-                                        <button class="uk-button uk-button-danger">Sign Out</button>
+
+                                        <span uk-icon="icon: sign-out" uk-tooltip="title: Sign Out" style="color: #e74c3c"></span>
                                     </div>
                                 </div>
                             </div>
