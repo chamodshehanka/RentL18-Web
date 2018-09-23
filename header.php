@@ -25,7 +25,7 @@
 
                                 <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
 
-                                <div uk-drop>
+                                <div uk-drop = "mode:click">
                                     <div class="uk-card uk-card-body uk-card-default">
                                         <h4 id="navUserName"></h4>
                                         Account details<br>
