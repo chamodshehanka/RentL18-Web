@@ -32,6 +32,10 @@
                                         <a href="controller/logOut.php">
                                             <span uk-icon="icon: sign-out" uk-tooltip="title: Sign Out" style="color: #e74c3c"></span>
                                         </a>
+
+                                        <a href="">
+                                            <span uk-icon="icon: cog" uk-tooltip="title: Settings" style=""></span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
