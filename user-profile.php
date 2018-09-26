@@ -22,7 +22,9 @@
 <?php include 'side-menu.php'?>
 
 <!--Body section-->
-<div style="width: 100%;height: 500px"></div>
+<form action="" method="post">
+
+</form>
 <!--End Body section-->
 
 <?php include 'footer.php'?>
