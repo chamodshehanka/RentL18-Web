@@ -9,7 +9,7 @@
 
 <div class="uk-offcanvas-content">
 
-    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+    <div id="offcanvas-flip" uk-offcanvas="flip: false; overlay: true">
         <div class="uk-offcanvas-bar"  style="background-color: #1e87f0">
 
             <button class="uk-offcanvas-close" type="button" uk-close></button>
