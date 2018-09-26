@@ -29,7 +29,9 @@
                                     <div class="uk-card uk-card-body uk-card-default">
                                         <h4 id="navUserName"></h4>
 
-                                        <span uk-icon="icon: sign-out" uk-tooltip="title: Sign Out" style="color: #e74c3c"></span>
+                                        <a href="controller/logOut.php">
+                                            <span uk-icon="icon: sign-out" uk-tooltip="title: Sign Out" style="color: #e74c3c"></span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
