@@ -22,7 +22,9 @@
 <?php include 'side-menu.php'?>
 
 <!--Body section-->
-<div style="width: 100%;height: 500px"></div>
+<div style="">
+
+</div>
 <!--End Body section-->
 
 <?php include 'footer.php'?>
