@@ -25,6 +25,48 @@
 <!--Body section-->
 <div class="container">
     <div class="row">
+        <div class="col-sm-4">
+            <div class="uk-card uk-card-hover uk-card-body">
+                <h3 class="uk-card-title">Today Reservations</h3>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar"
+                         aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                        40%
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="uk-card uk-card-hover uk-card-body">
+                <h3 class="uk-card-title">Visitors Today</h3>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                         aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                        80%
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="uk-card uk-card-hover uk-card-body">
+                <h3 class="uk-card-title">Canceled Trips</h3>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+                         aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                        20%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container">
+    <div class="row">
 
         <!--Admins-->
         <div class="col-sm-3">
