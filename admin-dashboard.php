@@ -20,12 +20,13 @@
 <?php include 'header.php'?>
 
 <?php include 'side-menu.php'?>
-
+<div style="width: 1px;height: 50px"></div>
 <!--Body section-->
 <div class="container">
-    <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m" style="width: 300px">
-        <h3 class="uk-card-title">Default</h3>
-        <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="uk-card uk-card-primary uk-card-body uk-width-1-2@m"
+         style="width: 200px;height: 200px;">
+        <h3 class="uk-card-title" align="center">Users</h3>
+        <img src="https://png.icons8.com/color/96/3498db/conference.png">
     </div>
 </div>
 <!--End Body section-->
