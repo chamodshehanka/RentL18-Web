@@ -24,21 +24,58 @@
 <div style="width: 100%; height: 30px;"></div>
 <!--Body section-->
 <div class="container">
-    <div class="uk-animation-toggle" style="float: left">
-        <div class="uk-card uk-card-primary uk-card-body uk-animation-fade uk-width-1-2@m"
-             style="width: 200px;height: 200px;">
-            <h3 class="uk-card-title" align="center">Users</h3>
-            <p align="center">
-                <img src="https://png.icons8.com/color/96/3498db/conference.png">
-            </p>
+    <div class="row">
+
+        <!--Admins-->
+        <div class="col-sm-3">
+            <div class="uk-animation-toggle">
+                <div class="uk-card uk-card-secondary uk-card-body uk-animation-fade uk-width-1-2@m"
+                     style="width: 200px;height: 200px;">
+                    <h3 class="uk-card-title" align="center">Admins</h3>
+                    <p align="center">
+                        <img src="https://png.icons8.com/color/96/3498db/conference.png">
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <div class="uk-card uk-card-primary uk-card-body uk-animation-fade uk-width-1-2@m"
-             style="width: 200px;height: 200px;">
-            <h3 class="uk-card-title" align="center">Roles</h3>
-            <p align="center">
-                <img src="https://png.icons8.com/color/96/3498db/conference.png">
-            </p>
+        <!--Parents-->
+        <div class="col-sm-3">
+            <div class="uk-animation-toggle">
+                <div class="uk-card uk-card-primary uk-card-body uk-animation-fade uk-width-1-2@m"
+                     style="width: 200px;height: 200px;">
+                    <h3 class="uk-card-title" align="center">Parents</h3>
+                    <p align="center">
+                        <img src="https://png.icons8.com/office/80/3498db/mother.png">
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Drivers-->
+        <div class="col-sm-3">
+            <div class="uk-animation-toggle">
+                <div class="uk-card uk-card-secondary uk-card-body uk-animation-fade uk-width-1-2@m"
+                     style="width: 200px;height: 200px;">
+                    <h3 class="uk-card-title" align="center">Drivers</h3>
+                    <p align="center">
+                        <img src="https://png.icons8.com/color/80/3498db/driver.png">
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Vehicles-->
+        <div class="col-sm-3">
+            <div class="uk-animation-toggle">
+                <div class="uk-card uk-card-primary uk-card-body uk-animation-fade uk-width-1-2@m"
+                     style="width: 200px;height: 200px;" onclick="location.href='index.php';">
+                    <h3 class="uk-card-title" align="center">Vehicles</h3>
+                    <p align="center">
+                        <img src="https://png.icons8.com/color/80/3498db/bus.png">
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
