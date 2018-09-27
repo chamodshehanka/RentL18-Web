@@ -11,7 +11,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Manage | Admin</title>
+    <title>Manage Admins| Admin</title>
 
     <?php include 'header-tags.php'?>
 </head>
