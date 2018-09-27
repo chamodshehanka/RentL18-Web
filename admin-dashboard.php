@@ -26,7 +26,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-4">
-            <div class="uk-card uk-card-hover uk-card-body">
+            <div class="uk-card uk-card-body">
                 <h3 class="uk-card-title">Today Reservations</h3>
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped active" role="progressbar"
@@ -38,7 +38,7 @@
         </div>
 
         <div class="col-sm-4">
-            <div class="uk-card uk-card-hover uk-card-body">
+            <div class="uk-card uk-card-body">
                 <h3 class="uk-card-title">Visitors Today</h3>
                 <div class="progress">
                     <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
@@ -50,7 +50,7 @@
         </div>
 
         <div class="col-sm-4">
-            <div class="uk-card uk-card-hover uk-card-body">
+            <div class="uk-card uk-card-body">
                 <h3 class="uk-card-title">Canceled Trips</h3>
                 <div class="progress">
                     <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
