@@ -98,7 +98,7 @@
         <div class="col-sm-3">
             <div class="uk-animation-toggle">
                 <div class="uk-card uk-card-secondary uk-card-body uk-animation-fade uk-width-1-2@m"
-                     style="width: 200px;height: 200px;">
+                     style="width: 200px;height: 200px;" onclick="location.href='manage-drivers.php';">
                     <h3 class="uk-card-title" align="center">Drivers</h3>
                     <p align="center">
                         <img src="https://png.icons8.com/color/80/3498db/driver.png">
