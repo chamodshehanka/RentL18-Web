@@ -24,10 +24,18 @@
 <div style="width: 100%; height: 30px;"></div>
 <!--Body section-->
 <div class="container">
-    <div class="uk-animation-toggle">
+    <div class="uk-animation-toggle" style="float: left">
         <div class="uk-card uk-card-primary uk-card-body uk-animation-fade uk-width-1-2@m"
              style="width: 200px;height: 200px;">
             <h3 class="uk-card-title" align="center">Users</h3>
+            <p align="center">
+                <img src="https://png.icons8.com/color/96/3498db/conference.png">
+            </p>
+        </div>
+
+        <div class="uk-card uk-card-primary uk-card-body uk-animation-fade uk-width-1-2@m"
+             style="width: 200px;height: 200px;">
+            <h3 class="uk-card-title" align="center">Roles</h3>
             <p align="center">
                 <img src="https://png.icons8.com/color/96/3498db/conference.png">
             </p>
