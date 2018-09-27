@@ -72,7 +72,7 @@
         <div class="col-sm-3">
             <div class="uk-animation-toggle">
                 <div class="uk-card uk-card-secondary uk-card-body uk-animation-fade uk-width-1-2@m"
-                     style="width: 200px;height: 200px;">
+                     style="width: 200px;height: 200px;" onclick="location.href='manage-admins.php';">
                     <h3 class="uk-card-title" align="center">Admins</h3>
                     <p align="center">
                         <img src="https://png.icons8.com/color/96/3498db/conference.png">
@@ -85,7 +85,7 @@
         <div class="col-sm-3">
             <div class="uk-animation-toggle">
                 <div class="uk-card uk-card-primary uk-card-body uk-animation-fade uk-width-1-2@m"
-                     style="width: 200px;height: 200px;">
+                     style="width: 200px;height: 200px;" onclick="location.href='manage-parents.php';">
                     <h3 class="uk-card-title" align="center">Parents</h3>
                     <p align="center">
                         <img src="https://png.icons8.com/office/80/3498db/mother.png">
@@ -111,7 +111,7 @@
         <div class="col-sm-3">
             <div class="uk-animation-toggle">
                 <div class="uk-card uk-card-primary uk-card-body uk-animation-fade uk-width-1-2@m"
-                     style="width: 200px;height: 200px;" onclick="location.href='index.php';">
+                     style="width: 200px;height: 200px;" onclick="location.href='';">
                     <h3 class="uk-card-title" align="center">Vehicles</h3>
                     <p align="center">
                         <img src="https://png.icons8.com/color/80/3498db/bus.png">

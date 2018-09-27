@@ -20,7 +20,9 @@
 <?php include 'side-menu.php'?>
 
 <!--Body-->
+<div class="container">
 
+</div>
 
 
 <!--End Body-->
