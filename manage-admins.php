@@ -24,15 +24,15 @@
     <div class="row">
         <br>
         <div class="col-md-3">
-            <input class="uk-input" name="" type="text" placeholder="Username">
+            <input class="uk-input" name="userName" type="text" placeholder="Username">
         </div>
 
         <div class="col-md-3">
-            <input class="uk-input" name="" type="text" placeholder="Name">
+            <input class="uk-input" name="name" type="text" placeholder="Name">
         </div>
 
         <div class="col-md-3">
-            <input class="uk-input" name="" type="text" placeholder="Telephone">
+            <input class="uk-input" name="telephone" type="text" placeholder="Telephone">
         </div>
 
         <div class="col-md-3">
