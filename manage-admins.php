@@ -36,7 +36,33 @@
         </div>
 
         <div class="col-md-3">
+            <div class="js-upload" uk-form-custom>
+                <input type="file" multiple>
+                <button class="uk-button uk-button-primary" type="button" tabindex="-1">Select</button>
+            </div>
+        </div>
 
+        <br>
+
+        <div style="margin: 0 auto; max-width: 100%;">
+            <div class="col-sm-1">
+                <button class="uk-button uk-button-primary" type="button"> Add </button>
+            </div>
+            <div class="col-sm-1" style="width: 1px"></div>
+
+            <div class="col-sm-1">
+                <button class="uk-button uk-button-primary" type="button">Search</button>
+            </div>
+            <div class="col-sm-1" style="width: 1px"></div>
+
+            <div class="col-sm-1">
+                <button class="uk-button uk-button-primary" type="button">Update</button>
+            </div>
+            <div class="col-sm-1" style="width: 1px"></div>
+
+            <div class="col-sm-1">
+                <button class="uk-button uk-button-primary" type="button">Delete</button>
+            </div>
         </div>
     </div>
 
