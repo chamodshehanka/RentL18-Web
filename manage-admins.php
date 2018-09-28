@@ -61,7 +61,7 @@
             <div class="col-sm-1" style="width: 1px"></div>
 
             <div class="col-sm-1">
-                <button class="uk-button uk-button-primary" type="button">Delete</button>
+                <button class="uk-button uk-button-danger" type="button">Delete</button>
             </div>
         </div>
     </div>
