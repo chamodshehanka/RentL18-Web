@@ -37,9 +37,9 @@
             <tr>
                 <th class="uk-table-shrink"></th>
                 <th class="uk-table-shrink">Image</th>
-                <th class="uk-table-expand">Name</th>
-                <th class="uk-width-small">Truncate</th>
-                <th class="uk-table-shrink uk-text-nowrap">Shrink + Nowrap</th>
+                <th class="uk-table-shrink">User Name</th>
+                <th class="uk-table-shrink">Name</th>
+                <th class="uk-width-small">Telephone</th>
             </tr>
             </thead>
 
@@ -50,12 +50,18 @@
                         <input class="uk-checkbox" type="checkbox">
                     </label>
                 </td>
-                <td><img class="uk-preserve-width uk-border-circle" src="images/avatar.jpg" width="40" alt=""></td>
-                <td class="uk-table-link">
-                    <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
+                <td>
+                    <img class="uk-preserve-width uk-border-circle" src="images/avatar.jpg" width="40" alt="">
                 </td>
-                <td class="uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
-                <td class="uk-text-nowrap">Lorem ipsum dolor</td>
+                <td class="uk-table-link">
+                    A001
+                </td>
+                <td class="uk-table-link">
+                    Chamod Shehanka
+                </td>
+                <td class="uk-text-truncate">
+                    Horana
+                </td>
             </tr>
             </tbody>
         </table>
