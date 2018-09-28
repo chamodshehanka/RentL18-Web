@@ -36,8 +36,8 @@
             <thead>
             <tr>
                 <th class="uk-table-shrink"></th>
-                <th class="uk-table-shrink">Preserve</th>
-                <th class="uk-table-expand">Expand + Link</th>
+                <th class="uk-table-shrink">Image</th>
+                <th class="uk-table-expand">Name</th>
                 <th class="uk-width-small">Truncate</th>
                 <th class="uk-table-shrink uk-text-nowrap">Shrink + Nowrap</th>
             </tr>
