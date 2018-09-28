@@ -11,7 +11,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Manage Admins| Admin</title>
+    <title>Manage Admins | Admin</title>
 
     <?php include 'header-tags.php'?>
 </head>
@@ -24,7 +24,19 @@
     <div class="row">
         <br>
         <div class="col-md-3">
+            <input class="uk-input" name="" type="text" placeholder="Username">
+        </div>
+
+        <div class="col-md-3">
             <input class="uk-input" name="" type="text" placeholder="Name">
+        </div>
+
+        <div class="col-md-3">
+            <input class="uk-input" name="" type="text" placeholder="Telephone">
+        </div>
+
+        <div class="col-md-3">
+
         </div>
     </div>
 
@@ -69,7 +81,7 @@
     <!--End Table-->
 </div>
 
-
+<br>
 <!--End Body-->
 
 <?php include 'footer.php'?>
