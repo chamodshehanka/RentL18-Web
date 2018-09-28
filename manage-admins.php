@@ -78,6 +78,7 @@
                 <th class="uk-table-shrink">User Name</th>
                 <th class="uk-table-shrink">Name</th>
                 <th class="uk-width-small">Telephone</th>
+                <th class="uk-width-small"></th>
             </tr>
             </thead>
 
@@ -92,13 +93,16 @@
                     <img class="uk-preserve-width uk-border-circle" src="images/avatar.jpg" width="40" alt="">
                 </td>
                 <td>
-                    A001
+                    admin@rent18.tk
                 </td>
                 <td>
                     Chamod Shehanka
                 </td>
                 <td class="uk-text-truncate">
                     0775633985
+                </td>
+                <td>
+                    <button class="uk-button uk-button-secondary" type="button">Manage</button>
                 </td>
             </tr>
             </tbody>
