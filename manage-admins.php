@@ -53,14 +53,14 @@
                 <td>
                     <img class="uk-preserve-width uk-border-circle" src="images/avatar.jpg" width="40" alt="">
                 </td>
-                <td class="uk-table-link">
+                <td>
                     A001
                 </td>
-                <td class="uk-table-link">
+                <td>
                     Chamod Shehanka
                 </td>
                 <td class="uk-text-truncate">
-                    Horana
+                    0775633985
                 </td>
             </tr>
             </tbody>
