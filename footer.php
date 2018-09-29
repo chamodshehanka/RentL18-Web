@@ -145,6 +145,7 @@
 <script async src="js/validationController.js"></script>
 <script async src="js/index.js"></script>
 <script async src="js/utilController.js"></script>
+<script async src="js/ajax-scripts.js"></script>
 
 <!-- Ioinic icons -->
 <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
