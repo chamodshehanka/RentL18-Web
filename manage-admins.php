@@ -70,13 +70,11 @@
                     <button class="uk-modal-close-default" type="button" uk-close></button>
                     <h2 class="uk-modal-title">Add new Admin</h2>
 
-                    <input class="uk-input" name="userName" type="text" placeholder="Username">
+                    <input class="uk-input" name="userName" type="text" placeholder="email">
                     <div style="width: 100%; height: 4px;"></div>
 
                     <input class="uk-input" name="name" type="text" placeholder="Name">
                     <div style="width: 100%; height: 4px;"></div>
-
-                    <input class="uk-input" name="telephone" type="text" placeholder="Telephone">
 
                     <h4>Profile Picture : </h4>
                     <div class="js-upload" uk-form-custom>
@@ -104,9 +102,8 @@
             <tr>
                 <th class="uk-table-shrink"></th>
                 <th class="uk-table-shrink">Image</th>
-                <th class="uk-table-shrink">User Name</th>
+                <th class="uk-table-shrink">Email</th>
                 <th class="uk-table-shrink">Name</th>
-                <th class="uk-width-small">Telephone</th>
                 <th class="uk-width-small"></th>
             </tr>
             </thead>
@@ -127,9 +124,6 @@
                 <td>
                     Chamod Shehanka
                 </td>
-                <td class="uk-text-truncate">
-                    0775633985
-                </td>
                 <td>
                     <button class="uk-button uk-button-secondary" type="button">Manage</button>
                 </td>
@@ -140,6 +134,8 @@
     <!--End Table-->
 </div>
 
+
+<div style="width: 100%;height: 300px"></div>
 <br>
 <!--End Body-->
 

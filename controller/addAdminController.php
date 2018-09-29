@@ -7,8 +7,9 @@
  */
 include 'connect.php';
 
-$userName = $_POST['userName'];
+$userName = $_POST['email'];
 $name = $_POST['name'];
-$telephone = $_POST['telephone'];
+
 $profilePicture = addslashes(file_get_contents($_FILES['profilePicture']));
 
+if (mysqli_query("INSERT INTO admin VALUES ('$u')")){}
