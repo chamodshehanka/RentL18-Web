@@ -13,8 +13,11 @@ $password = $_POST['password'];
 
 $profilePicture = addslashes(file_get_contents($_FILES['profilePicture']));
 
-if (mysql_query("INSERT INTO admin VALUES ('$userName','$name')")){
-    echo 'Added';
-}else{
-    echo 'Failed';
+if ($connection){
+    $result = mysqli_query($connection, "INSERT INTO admin VALUES ('$userName','$name')");
+    if ($result){
+        echo 'Added';
+    }else{
+        echo 'Failed';
+    }
 }
