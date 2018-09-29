@@ -22,7 +22,7 @@
 <!--Body-->
 <div class="container">
     <div class="row">
-        <br>
+        <!--<br>
         <div class="col-md-3">
             <input class="uk-input" name="userName" type="text" placeholder="Username">
         </div>
@@ -40,13 +40,13 @@
                 <input type="file" multiple>
                 <button class="uk-button uk-button-primary" type="button" tabindex="-1">Select</button>
             </div>
-        </div>
+        </div>-->
 
         <br>
 
         <div style="margin: 0 auto; max-width: 100%;">
-            <div class="col-sm-1">
-                <button class="uk-button uk-button-primary" type="button"> Add </button>
+            <div class="col-sm-2">
+                <button class="uk-button uk-button-primary" type="button" uk-toggle="target: #modal-add-admin"> New Admin </button>
             </div>
             <div class="col-sm-1" style="width: 1px"></div>
 
@@ -63,6 +63,35 @@
             <div class="col-sm-1">
                 <button class="uk-button uk-button-danger" type="button">Delete</button>
             </div>
+
+            <!--Add Admin Modal-->
+            <div id="modal-add-admin" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                    <h2 class="uk-modal-title">Add new Admin</h2>
+
+                    <input class="uk-input" name="userName" type="text" placeholder="Username">
+                    <div style="width: 100%; height: 4px;"></div>
+
+                    <input class="uk-input" name="name" type="text" placeholder="Name">
+                    <div style="width: 100%; height: 4px;"></div>
+
+                    <input class="uk-input" name="telephone" type="text" placeholder="Telephone">
+
+                    <h4>Profile Picture : </h4>
+                    <div class="js-upload" uk-form-custom>
+                        <input type="file" multiple>
+                        <button class="uk-button uk-button-primary" type="button" tabindex="-1">Choose</button>
+                    </div>
+
+                    <div class="uk-modal-footer uk-text-right">
+                        <button class="uk-button uk-button-danger uk-modal-close" type="button">Cancel</button>
+                        <button class="uk-button uk-button-primary" type="button">Save</button>
+                    </div>
+                </div>
+
+            </div>
+            <!--End Admin modal-->
         </div>
     </div>
 
