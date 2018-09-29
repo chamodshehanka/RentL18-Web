@@ -55,7 +55,7 @@ window.onload = function() {
 let saveButton = $('#btnAddAdmin');
 saveButton.attr("disabled", "disabled");
 
-$('#inputImage').change(function () {
+$('#txtAdminPasswordRe').change(function () {
     if ($('#txtAdminPassword').val() === $('#txtAdminPasswordRe').val()){
         saveButton.removeAttr("disabled");
     }
