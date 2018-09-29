@@ -80,7 +80,7 @@
 
                     <h4>Profile Picture : </h4>
                     <div class="js-upload" uk-form-custom>
-                        <input type="file" multiple>
+                        <input type="file" name="profilePicture" multiple>
                         <button class="uk-button uk-button-primary" type="button" tabindex="-1">Choose</button>
                     </div>
 
