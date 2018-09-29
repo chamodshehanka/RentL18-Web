@@ -5,7 +5,6 @@ let btnAddAdmin = $('#btnAddAdmin');
 btnAddAdmin.click(function () {
     let data = $('#form-add-admin:input').serializeArray();
     $.post($('#form-add-admin').attr("action"), data, function (info) {
-        console.log(info);
         if (info === 'Added'){
             UIkit.notification({message: 'Admin has been successfully added!'});
         }else {

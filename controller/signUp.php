@@ -31,5 +31,4 @@ if ($connection){
 }else{
     $message = mysqli_connect_error();
     mysqli_close($connection);
-    echo "<script>window.location.replace('message.php?title=Message&subtitle=Error&message={$message}'); </script>";
 }
