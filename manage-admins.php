@@ -70,10 +70,16 @@
                     <button class="uk-modal-close-default" type="button" uk-close></button>
                     <h2 class="uk-modal-title">Add new Admin</h2>
 
-                    <input class="uk-input" name="userName" type="text" placeholder="email">
+                    <input class="uk-input" name="name" type="text" placeholder="Name">
                     <div style="width: 100%; height: 4px;"></div>
 
-                    <input class="uk-input" name="name" type="text" placeholder="Name">
+                    <input class="uk-input" name="email" type="text" placeholder="Email">
+                    <div style="width: 100%; height: 4px;"></div>
+
+                    <input id="txtAdminPassword" class="uk-input" name="password" type="text" placeholder="Password">
+                    <div style="width: 100%; height: 4px;"></div>
+
+                    <input id="txtAdminPasswordRe" class="uk-input" type="text" placeholder="Re type Password">
                     <div style="width: 100%; height: 4px;"></div>
 
                     <h4>Profile Picture : </h4>
