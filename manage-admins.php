@@ -22,28 +22,7 @@
 <!--Body-->
 <div class="container">
     <div class="row">
-        <!--<br>
-        <div class="col-md-3">
-            <input class="uk-input" name="userName" type="text" placeholder="Username">
-        </div>
-
-        <div class="col-md-3">
-            <input class="uk-input" name="name" type="text" placeholder="Name">
-        </div>
-
-        <div class="col-md-3">
-            <input class="uk-input" name="telephone" type="text" placeholder="Telephone">
-        </div>
-
-        <div class="col-md-3">
-            <div class="js-upload" uk-form-custom>
-                <input type="file" multiple>
-                <button class="uk-button uk-button-primary" type="button" tabindex="-1">Select</button>
-            </div>
-        </div>-->
-
         <br>
-
         <div style="margin: 0 auto; max-width: 100%;">
             <div class="col-sm-2">
                 <button class="uk-button uk-button-primary" type="button" uk-toggle="target: #modal-add-admin"> New Admin </button>
