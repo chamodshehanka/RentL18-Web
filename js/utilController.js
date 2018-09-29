@@ -50,3 +50,13 @@ window.onload = function() {
     eleHeader = document.getElementById(idOfHeader);
     document.addEventListener('scroll', onScroll, false);
 };
+
+//Add Admin password verification
+let saveButton = $('#btnAddAdmin');
+saveButton.attr("disabled", "disabled");
+
+$('#inputImage').change(function () {
+    if ($('#txtAdminPassword').val() === $('#txtAdminPasswordRe').val()){
+        saveButton.removeAttr("disabled");
+    }
+});

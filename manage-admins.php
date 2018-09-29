@@ -76,21 +76,21 @@
                     <input class="uk-input" name="email" type="text" placeholder="Email">
                     <div style="width: 100%; height: 4px;"></div>
 
-                    <input id="txtAdminPassword" class="uk-input" name="password" type="text" placeholder="Password">
+                    <input id="txtAdminPassword" class="uk-input" name="password" type="password" placeholder="Password">
                     <div style="width: 100%; height: 4px;"></div>
 
-                    <input id="txtAdminPasswordRe" class="uk-input" type="text" placeholder="Re type Password">
+                    <input id="txtAdminPasswordRe" class="uk-input" type="password" placeholder="Re type Password">
                     <div style="width: 100%; height: 4px;"></div>
 
                     <h4>Profile Picture : </h4>
                     <div class="js-upload" uk-form-custom>
-                        <input type="file" name="profilePicture" multiple>
+                        <input id="inputImage" type="file" name="profilePicture" multiple>
                         <button class="uk-button uk-button-primary" type="button" tabindex="-1">Choose</button>
                     </div>
 
                     <div class="uk-modal-footer uk-text-right">
                         <button class="uk-button uk-button-danger uk-modal-close" type="button">Cancel</button>
-                        <button class="uk-button uk-button-primary" type="button">Save</button>
+                        <button id="btnAddAdmin" class="uk-button uk-button-primary" type="submit">Save</button>
                     </div>
                 </div>
 
