@@ -10,7 +10,8 @@ $(document).ready(function () {
     let btnSignIn = $('#btnSignIn');
     btnSignIn.click(function () {
         let formData = $('#form-sign-in').serializeArray();
-        console.log(formData);
-        event.preventDefault();
+        let data = JSON.stringify(formData);
+        console.log(data);
+        // event.preventDefault();
     });
 });

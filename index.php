@@ -142,7 +142,7 @@ setcookie($cookie_Name, $cookie_Value, time() + (86400 * 30),'/'); //86400 * 30 
             </div>
 
             <div style="float: right">
-                <button id="btnSignIn" class="uk-button uk-button-primary" type="submit" onclick="login()">Sign In</button>
+                <button id="btnSignIn" class="uk-button uk-button-primary" type="submit">Sign In</button>
             </div>
         </form>
         <br><br>

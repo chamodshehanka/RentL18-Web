@@ -151,10 +151,5 @@
 <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
 <!--End Icons-->
 
-<script type="text/javascript">
-    function login() {
-        $.get("controller/signIn.php");
-        return false;
-    }
-</script>
+<script type="text/javascript"></script>
 <!--End JS Controllers-->

@@ -6,6 +6,7 @@
  * Time: 8:17 PM
  */
 
+const isSiteOnline = false;
 
 $userName = $_POST["email"];
 $password = $_POST['password'];
@@ -24,20 +25,7 @@ $connectionLocal = mysqli_connect(
     "rentlioweb"
 );
 
-if ($connectionLocal){
-    $resultSet = mysqli_query($connectionLocal, "SELECT * FROM admin");
-
-    if ($resultSet){
-        $resultArray = mysqli_fetch_all($resultSet);
-        foreach ($resultArray as $rowData){
-            if ($userName == $rowData[0] and $password == $rowData[1]){
-                    header('Location: '.'../admin-dashboard.php');
-            }else{
-                echo 'Failed to login';
-            }
-        }
-    }
-}else if ($connection){
+if (isSiteOnline){
     $resultSet = mysqli_connect($connection,'SELECT * FROM admin');
 
     if ($resultSet){
@@ -52,7 +40,19 @@ if ($connectionLocal){
         }
     }
 }else{
-    echo 'Connection failed!!!';
+    $resultSet = mysqli_query($connectionLocal, "SELECT * FROM admin");
+
+    if ($resultSet){
+        $resultArray = mysqli_fetch_all($resultSet);
+        foreach ($resultArray as $rowData){
+            if ($userName == $rowData[0] and $password == $rowData[1]){
+                createUserCookie($userName);
+                header('Location: '.'../admin-dashboard.php');
+            }else{
+                echo 'Failed to login';
+            }
+        }
+    }
 }
 
 function createUserCookie($name){
