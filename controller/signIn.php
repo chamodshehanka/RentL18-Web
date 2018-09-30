@@ -55,6 +55,9 @@ if (isSiteOnline){
     }
 }
 
+/**
+ * @param $name
+ */
 function createUserCookie($name){
     $cookie_Name = 'user';
     $cookie_Value = $name;
