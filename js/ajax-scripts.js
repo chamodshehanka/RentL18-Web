@@ -2,6 +2,7 @@
  * AJAX SCRIPTS
  * */
 let btnAddAdmin = $('#btnAddAdmin');
+/*
 btnAddAdmin.click(function () {
     let data = $('#form-add-admin:input').serializeArray();
     $.post($('#form-add-admin').attr("action"), data, function (info) {
@@ -16,4 +17,13 @@ btnAddAdmin.click(function () {
 
 btnAddAdmin.submit(function () {
     return false;
+});*/
+
+btnAddAdmin.click(function () {
+    let name = $('name');
+
+    $.ajax({
+        type : 'POST',
+        // data : ();
+    })
 });

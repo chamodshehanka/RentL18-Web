@@ -17,7 +17,7 @@ if ($connection){
     $result = mysqli_query($connection, "INSERT INTO admin VALUES ('$userName','$password')");
     if ($result){
         echo 'Added';
-        echo $result;
+//        echo $result;
     }else{
         echo 'Failed';
     }
