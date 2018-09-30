@@ -11,6 +11,7 @@ const isSiteOnline = false;
 $userName = $_POST["email"];
 $password = $_POST['password'];
 
+//host DB Connection
 $connection = mysqli_connect(
     "localhost",
     "id6917641_rent18",
@@ -18,6 +19,7 @@ $connection = mysqli_connect(
     "id6917641_rent18"
 );
 
+//localhost DB Connection
 $connectionLocal = mysqli_connect(
     "localhost",
     "root",
