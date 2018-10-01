@@ -32,6 +32,7 @@ $(document).ready(function () {
     });
 });
 
+//Sign Up
 $(document).ready(function () {
     let btnSignUp = $('#btnSignUp');
     

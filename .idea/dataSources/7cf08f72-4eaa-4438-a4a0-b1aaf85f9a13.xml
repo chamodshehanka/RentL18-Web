@@ -1178,36 +1178,41 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="291" parent="249" name="PRIMARY">
+    <column id="291" parent="249" name="picture">
+      <Position>4</Position>
+      <DataType>longblob|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="292" parent="249" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>email</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="292" parent="250" name="vehicleId">
+    <column id="293" parent="250" name="vehicleId">
       <Position>1</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="293" parent="250" name="vehicleNo">
+    <column id="294" parent="250" name="vehicleNo">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="294" parent="250" name="noOfSeats">
+    <column id="295" parent="250" name="noOfSeats">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="295" parent="250" name="chargePerKm">
+    <column id="296" parent="250" name="chargePerKm">
       <Position>4</Position>
       <DataType>decimal(10,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="296" parent="250" name="PRIMARY">
+    <key id="297" parent="250" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>vehicleId</ColNames>
       <Primary>1</Primary>
