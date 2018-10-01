@@ -7,9 +7,11 @@
  */
 
 const isSiteOnline = false;
+const isAJAX_On = false;
 
-$userName = $_POST["email"];
-$password = $_POST['password'];
+//Declaring variables
+$userName = null;
+$password = null;
 
 //host DB Connection
 $connection = mysqli_connect(
@@ -26,6 +28,24 @@ $connectionLocal = mysqli_connect(
     "wampwamp",
     "rentlioweb"
 );
+
+if (isAJAX_On){
+    $userName = $connectionLocal->real_escape_string($_POST['emailPHP']);
+    $password = $connectionLocal->real_escape_string($_POST['passwordPHP']);
+
+    $data = $connectionLocal->query(
+            "SELECT username FROM admin WHERE username='$userName' AND password='$password'"
+    );
+
+    if ($data->num_rows > 0){
+        exit('success');
+    }else{
+        exit('failed');
+    }
+}else {
+    $userName = $_POST["email"];
+    $password = $_POST['password'];
+}
 
 if (isSiteOnline){
     $resultSet = mysqli_connect($connection,'SELECT * FROM admin');
