@@ -9,9 +9,25 @@
 $(document).ready(function () {
     let btnSignIn = $('#btnSignIn');
     btnSignIn.click(function () {
-        let formData = $('#form-sign-in').serializeArray();
-        let data = JSON.stringify(formData);
-        console.log(data);
-        // event.preventDefault();
+        let email = $('#txtEmail').val();
+        let password = $('#txtPassword').val();
+        console.log(email + password);
+        if (!(email === "" || password === "")){
+            $.ajax({
+                url : 'controller/signIn.php',
+                data: {
+                    login : 1,
+                    emailPHP : email,
+                    passwordPHP : password
+                },
+                success : function (response) {
+                    console.log(response);
+                    UIkit.notification({message: response + ''});
+                },
+                dataType: 'text'
+            });
+        }else{
+            UIkit.notification({message: 'Your inputs are empty!'});
+        }
     });
 });
