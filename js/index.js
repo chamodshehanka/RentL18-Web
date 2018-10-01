@@ -11,7 +11,7 @@ $(document).ready(function () {
     btnSignIn.click(function () {
         let email = $('#txtEmail').val();
         let password = $('#txtPassword').val();
-        console.log(email + password);
+
         if (!(email === "" || password === "")){
             $.ajax({
                 url : 'controller/signIn.php',
