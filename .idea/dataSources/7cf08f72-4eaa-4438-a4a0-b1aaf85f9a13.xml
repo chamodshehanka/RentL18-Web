@@ -960,230 +960,254 @@
     <table id="246" parent="12" name="parent"/>
     <table id="247" parent="12" name="reservation"/>
     <table id="248" parent="12" name="student"/>
-    <table id="249" parent="12" name="vehicle"/>
-    <column id="250" parent="243" name="username">
+    <table id="249" parent="12" name="users"/>
+    <table id="250" parent="12" name="vehicle"/>
+    <column id="251" parent="243" name="username">
       <Position>1</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="251" parent="243" name="password">
+    <column id="252" parent="243" name="password">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="252" parent="243" name="PRIMARY">
+    <key id="253" parent="243" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>username</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="253" parent="244" name="companyId">
+    <column id="254" parent="244" name="companyId">
       <Position>1</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="254" parent="244" name="companyName">
+    <column id="255" parent="244" name="companyName">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="255" parent="244" name="address">
+    <column id="256" parent="244" name="address">
       <Position>3</Position>
       <DataType>varchar(300)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="256" parent="244" name="telephone">
+    <column id="257" parent="244" name="telephone">
       <Position>4</Position>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="257" parent="244" name="vehicleNo">
+    <column id="258" parent="244" name="vehicleNo">
       <Position>5</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="258" parent="244" name="paymentMethod">
+    <column id="259" parent="244" name="paymentMethod">
       <Position>6</Position>
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="259" parent="244" name="PRIMARY">
+    <key id="260" parent="244" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>companyId</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="260" parent="244" name="vehicleNo">
+    <foreign-key id="261" parent="244" name="vehicleNo">
       <ColNames>companyId</ColNames>
       <RefSchemaName>rentlioweb</RefSchemaName>
       <RefTableName>vehicle</RefTableName>
       <RefColNames>vehicleId</RefColNames>
     </foreign-key>
-    <column id="261" parent="245" name="driverId">
+    <column id="262" parent="245" name="driverId">
       <Position>1</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="262" parent="245" name="driverName">
+    <column id="263" parent="245" name="driverName">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="263" parent="245" name="address">
+    <column id="264" parent="245" name="address">
       <Position>3</Position>
       <DataType>varchar(300)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="264" parent="245" name="telephone">
+    <column id="265" parent="245" name="telephone">
       <Position>4</Position>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="265" parent="245" name="chargePerKm">
+    <column id="266" parent="245" name="chargePerKm">
       <Position>5</Position>
       <DataType>decimal(10,2 digit)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="266" parent="245" name="vehicleNo">
+    <column id="267" parent="245" name="vehicleNo">
       <Position>6</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="267" parent="245" name="PRIMARY">
+    <key id="268" parent="245" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>driverId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="268" parent="246" name="parentId">
+    <column id="269" parent="246" name="parentId">
       <Position>1</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="269" parent="246" name="parentName">
+    <column id="270" parent="246" name="parentName">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="270" parent="246" name="address">
+    <column id="271" parent="246" name="address">
       <Position>3</Position>
       <DataType>varchar(300)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="271" parent="246" name="telephone">
+    <column id="272" parent="246" name="telephone">
       <Position>4</Position>
       <DataType>int(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="272" parent="246" name="email">
+    <column id="273" parent="246" name="email">
       <Position>5</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="273" parent="246" name="PRIMARY">
+    <key id="274" parent="246" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>parentId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="274" parent="247" name="reservationId">
+    <column id="275" parent="247" name="reservationId">
       <Position>1</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="275" parent="247" name="vehicleId">
+    <column id="276" parent="247" name="vehicleId">
       <Position>2</Position>
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="276" parent="247" name="driverId">
+    <column id="277" parent="247" name="driverId">
       <Position>3</Position>
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="277" parent="247" name="userId">
+    <column id="278" parent="247" name="userId">
       <Position>4</Position>
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="278" parent="247" name="date">
+    <column id="279" parent="247" name="date">
       <Position>5</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="279" parent="247" name="price">
+    <column id="280" parent="247" name="price">
       <Position>6</Position>
       <DataType>decimal(10,2 digit)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="280" parent="247" name="PRIMARY">
+    <key id="281" parent="247" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>reservationId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="281" parent="248" name="studentId">
+    <column id="282" parent="248" name="studentId">
       <Position>1</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="282" parent="248" name="studentName">
+    <column id="283" parent="248" name="studentName">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="283" parent="248" name="school">
+    <column id="284" parent="248" name="school">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="284" parent="248" name="address">
+    <column id="285" parent="248" name="address">
       <Position>4</Position>
       <DataType>varchar(300)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="285" parent="248" name="telephone">
+    <column id="286" parent="248" name="telephone">
       <Position>5</Position>
       <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="286" parent="248" name="PRIMARY">
+    <key id="287" parent="248" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>studentId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="287" parent="249" name="vehicleId">
+    <column id="288" parent="249" name="email">
+      <Position>1</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="289" parent="249" name="password">
+      <Position>2</Position>
+      <DataType>varchar(200)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="290" parent="249" name="UserType">
+      <Position>3</Position>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="291" parent="249" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>email</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="292" parent="250" name="vehicleId">
       <Position>1</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="249" name="vehicleNo">
+    <column id="293" parent="250" name="vehicleNo">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="249" name="noOfSeats">
+    <column id="294" parent="250" name="noOfSeats">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="290" parent="249" name="chargePerKm">
+    <column id="295" parent="250" name="chargePerKm">
       <Position>4</Position>
       <DataType>decimal(10,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="291" parent="249" name="PRIMARY">
+    <key id="296" parent="250" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>vehicleId</ColNames>
       <Primary>1</Primary>
