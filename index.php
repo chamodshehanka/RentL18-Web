@@ -160,7 +160,7 @@ setcookie($cookie_Name, $cookie_Value, time() + (86400 * 30),'/'); //86400 * 30 
         <button class="uk-modal-close-outside" type="button" uk-close></button>
         <h2 class="uk-modal-title">Sign Up</h2>
 
-        <form action="controller/signUp.php" method="post">
+        <form id="form-sign-up" action="controller/signUp.php" method="post">
             <div uk-grid>
                 <div class="uk-grid">
                     <div class="uk-width-1-2">

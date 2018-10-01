@@ -31,3 +31,20 @@ $(document).ready(function () {
         }
     });
 });
+
+$(document).ready(function () {
+    let btnSignUp = $('#btnSignUp');
+    
+    btnSignUp.click(function (event) {
+        event.preventDefault();
+        $.ajax({
+            url :'controller/signUp.php',
+            method : 'post',
+            data: $('#form-sign-up').serialize(),
+            dataType: 'text',
+            success: function (response) {
+                console.log(response);
+            }
+        })
+    });
+});
