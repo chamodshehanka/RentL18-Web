@@ -128,5 +128,14 @@
 
 <?php include 'footer.php'?>
 <?php include 'controller/setUserDetails.php';?>
+<script>
+    function viewData() {
+        
+    }
+    
+    function tableData() {
+        
+    }
+</script>
 </body>
 </html>
