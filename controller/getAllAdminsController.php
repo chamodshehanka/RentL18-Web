@@ -18,10 +18,6 @@ $json_adminArray = array();
 
 while ($row = mysqli_fetch_assoc($result)){
     $json_adminArray[] = $row;
-
-    /*echo '<pre>';
-    print_r($json_adminArray);
-    echo '</pre>';*/
 }
 
 echo json_encode($json_adminArray);

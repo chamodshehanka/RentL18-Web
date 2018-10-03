@@ -50,7 +50,4 @@ $(document).ready(function () {
     });
 });
 
-//Load JSON Data
-$(document).ready(function () {
 
-});

@@ -128,19 +128,37 @@
 
 <?php include 'footer.php'?>
 <?php include 'controller/setUserDetails.php';?>
-<?php include 'controller/getAllAdminsController.php'?>
+
 <script>
+const tblAdminBody = $('#tblAdmins>tbody');
+
+    /*loadJSONData();
+    //Load JSON Data
+    function loadJSONData(dataJSON) {
+        $.getJSON(dataJSON, function (data) {
+            let admin_data = '';
+            $.each(data, function (key,value) {
+                admin_data += '<tr>';
+                admin_data += '<td>' + value.username + '<td>';
+                admin_data += '<td>' + value.password + '<td>';
+                admin_data += '</tr>';
+                console.log(value.username);
+            });
+            $('#tblAdmins').append(admin_data);
+        });
+    }
 $(document).ready({
     $.ajax({
         url : 'controller/getAllAdminsController.php',
         method : 'POST',
-        data : {id:1}
+        data : {username:'chamodshehanka'},
         dataType : 'JSON',
         success: function (data) {
             console.log(data.username);
+            console.log(data.password);
         }
     })
-})
+})*/
 </script>
 </body>
 </html>
