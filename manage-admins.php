@@ -49,7 +49,7 @@
                     <button class="uk-modal-close-default" type="button" uk-close></button>
                     <h2 class="uk-modal-title">Add new Admin</h2>
 
-                    <form id="form-add-admin" method="post" action="controller/addAdminController.php">
+                    <form id="form-add-admin">
                         <input class="uk-input" name="name" type="text" placeholder="Name">
                         <div style="width: 100%; height: 4px;"></div>
 
@@ -62,11 +62,11 @@
                         <input id="txtAdminPasswordRe" class="uk-input" type="password" placeholder="Re type Password">
                         <div style="width: 100%; height: 4px;"></div>
 
-                        <h4>Profile Picture : </h4>
+                        <!--<h4>Profile Picture : </h4>
                         <div class="js-upload" uk-form-custom>
                             <input id="inputImage" type="file" name="profilePicture" multiple>
                             <button class="uk-button uk-button-primary" type="button" tabindex="-1">Choose</button>
-                        </div>
+                        </div>-->
 
                         <div class="uk-modal-footer uk-text-right">
                             <button class="uk-button uk-button-danger uk-modal-close" type="button">Cancel</button>
@@ -128,37 +128,5 @@
 
 <?php include 'footer.php'?>
 <?php include 'controller/setUserDetails.php';?>
-
-<script>
-const tblAdminBody = $('#tblAdmins>tbody');
-
-    /*loadJSONData();
-    //Load JSON Data
-    function loadJSONData(dataJSON) {
-        $.getJSON(dataJSON, function (data) {
-            let admin_data = '';
-            $.each(data, function (key,value) {
-                admin_data += '<tr>';
-                admin_data += '<td>' + value.username + '<td>';
-                admin_data += '<td>' + value.password + '<td>';
-                admin_data += '</tr>';
-                console.log(value.username);
-            });
-            $('#tblAdmins').append(admin_data);
-        });
-    }
-$(document).ready({
-    $.ajax({
-        url : 'controller/getAllAdminsController.php',
-        method : 'POST',
-        data : {username:'chamodshehanka'},
-        dataType : 'JSON',
-        success: function (data) {
-            console.log(data.username);
-            console.log(data.password);
-        }
-    })
-})*/
-</script>
 </body>
 </html>
