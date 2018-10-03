@@ -18,7 +18,7 @@
 <body>
 <?php include 'header.php'?>
 <?php include 'side-menu.php'?>
-
+<?php //include 'controller/getAllAdminsController.php'?>
 <!--Body-->
 <div class="container">
     <div class="row">
@@ -84,7 +84,7 @@
 
     <!--Table-->
     <div class="uk-overflow-auto">
-        <table class="uk-table uk-table-hover uk-table-middle uk-table-divider">
+        <table id="tblAdmins" class="uk-table uk-table-hover uk-table-middle uk-table-divider">
             <thead>
             <tr>
                 <th class="uk-table-shrink"></th>
@@ -128,14 +128,19 @@
 
 <?php include 'footer.php'?>
 <?php include 'controller/setUserDetails.php';?>
+<?php include 'controller/getAllAdminsController.php'?>
 <script>
-    function viewData() {
-        
-    }
-    
-    function tableData() {
-        
-    }
+$(document).ready({
+    $.ajax({
+        url : 'controller/getAllAdminsController.php',
+        method : 'POST',
+        data : {id:1}
+        dataType : 'JSON',
+        success: function (data) {
+            console.log(data.username);
+        }
+    })
+})
 </script>
 </body>
 </html>
