@@ -20,3 +20,9 @@ $("#btnAddAdmin").click(function(){
 
     http.send(queryString);
 });
+
+//Search Admin
+$().click(function () {
+    let http = new XMLHttpRequest();
+
+});
