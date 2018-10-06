@@ -22,7 +22,26 @@ $("#btnAddAdmin").click(function(){
 });
 
 //Search Admin
-$().click(function () {
+$().change(function(){
+
+    let username = $(this).val();
+
     let http = new XMLHttpRequest();
 
+    http.onreadystatechange = function(){
+
+        if (http.readyState === 4 && http.status === 200){
+
+            $("#output").text("Name : " + http.responseText);
+
+        }
+
+    };
+
+    http.open('GET','controller/searchAdminController?username=' + username,true);
+
+    http.send();
+
 });
+
+$("#cmbCustomerId").change();
