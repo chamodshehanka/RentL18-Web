@@ -45,3 +45,14 @@ $().change(function(){
 });
 
 $("#cmbCustomerId").change();
+
+//update Admin
+$().click(function () {
+    let http = new XMLHttpRequest();
+    http.onreadystatechange = function () {
+        if (http.readyState === 4 && http.status === 200){
+            alert(http.responseText);
+        //    Have to edit
+        }
+    }
+});
