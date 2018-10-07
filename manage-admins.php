@@ -24,10 +24,11 @@
     <div class="row">
         <br>
         <div style="margin: 0 auto; max-width: 100%;">
-            <div class="col-sm-2">
+            <div style="padding-right: 5px" class="col-sm-2">
                 <button class="uk-button uk-button-primary" type="button" uk-toggle="target: #modal-add-admin"> New Admin </button>
             </div>
             <div class="col-sm-1" style="width: 1px"></div>
+            <br>
 
             <div class="col-sm-1">
                 <button class="uk-button uk-button-primary" type="button">Search</button>
@@ -100,7 +101,7 @@
             </thead>
 
             <tbody>
-            <!--<tr>
+            <tr>
                 <td>
                     <label>
                         <input class='uk-checkbox' type="checkbox">
@@ -118,7 +119,7 @@
                 <td>
                     <button class="uk-button uk-button-secondary" type="button">Manage</button>
                 </td>
-            </tr>-->
+            </tr>
             </tbody>
         </table>
     </div>
