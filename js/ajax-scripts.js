@@ -9,6 +9,7 @@ $('#btnLoad').click(function () {
 
     http.onreadystatechange = function(){
         if (http.readyState === 4 && http.status === 200){
+            console.log(http.responseText);
             let admins = JSON.parse(http.responseText);
             // console.log(admins);
         }
@@ -38,7 +39,7 @@ $("#btnAddAdmin").click(function(){
 });
 
 //Search Admin
-$().change(function(){
+/*$().change(function(){
 
     let username = $(this).val();
 
@@ -58,11 +59,12 @@ $().change(function(){
 
     http.send();
 
-});
+});*/
 
-$("#cmbCustomerId").change();
+// $("#cmbCustomerId").change();
 
 //update Admin
+/*
 $().click(function () {
     let http = new XMLHttpRequest();
     http.onreadystatechange = function () {
@@ -71,4 +73,4 @@ $().click(function () {
         //    Have to edit
         }
     }
-});
+});*/

@@ -6,9 +6,6 @@
  * Time: 10:59 PM
  */
 
-/*header('Content-Type: application/json');
-
-$input = filter_input_array(INPUT_POST);*/
 
 include 'connect.php';
 
@@ -22,16 +19,6 @@ if ($connection){
 }else{
     echo "Something went wrong with database connection";
 }
-
-/*$result = mysqli_query($connection, "SELECT * FROM admin");
-
-$json_adminArray = array();
-
-while ($row = mysqli_fetch_assoc($result)){
-    $json_adminArray[] = $row;
-}
-
-echo json_encode($json_adminArray);*/
 
 
 
