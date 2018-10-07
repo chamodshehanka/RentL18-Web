@@ -25,7 +25,7 @@ function loadAllAdmins() {
                     "<td><img class='uk-preserve-width uk-border-circle' src='images/user.png' width='40'></td>" +
                     "<td>"+admin.username+"</td>" +
                     "<td>"+admin.password+"</td>" +
-                    "<td><button class='uk-button uk-button-secondary'>MANAGE</button></td>"+
+                    "<td></td>"+
                     "</tr>";
 
                 $("#tblAdmins tbody").append(html);
