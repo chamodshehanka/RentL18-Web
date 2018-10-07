@@ -67,11 +67,11 @@
                         <input id="txtAdminPasswordRe" class="uk-input" type="password" placeholder="Re type Password">
                         <div style="width: 100%; height: 4px;"></div>
 
-                        <!--<h4>Profile Picture : </h4>
+                        <h4>Profile Picture : </h4>
                         <div class="js-upload" uk-form-custom>
                             <input id="inputImage" type="file" name="profilePicture" multiple>
                             <button class="uk-button uk-button-primary" type="button" tabindex="-1">Choose</button>
-                        </div>-->
+                        </div>
 
                         <div class="uk-modal-footer uk-text-right">
                             <button class="uk-button uk-button-danger uk-modal-close" type="button">Cancel</button>
@@ -94,8 +94,8 @@
             <tr>
                 <th class="uk-table-shrink"></th>
                 <th class="uk-table-shrink">Image</th>
-                <th class="uk-table-shrink">Email</th>
-                <th class="uk-table-shrink">Name</th>
+                <th class="uk-table-shrink">UserName</th>
+                <th class="uk-table-shrink">Password</th>
                 <th class="uk-width-small"></th>
             </tr>
             </thead>
@@ -114,7 +114,7 @@
                     admin@rent18.tk
                 </td>
                 <td>
-                    Chamod Shehanka
+                    12345
                 </td>
                 <td>
                     <button class="uk-button uk-button-secondary" type="button">Manage</button>

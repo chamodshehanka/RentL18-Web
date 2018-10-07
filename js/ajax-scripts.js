@@ -5,6 +5,9 @@
 //Load All Admins
 $('#btnLoad').click(function () {
     // let userName = $(this).val();
+    loadAllAdmins();
+});
+function loadAllAdmins() {
     let http = new XMLHttpRequest();
 
     http.open('GET','controller/getAllAdminsController.php',true);
@@ -18,11 +21,11 @@ $('#btnLoad').click(function () {
                 let admin = admins[index];
                 let html =
                     "<tr>" +
-                        "<td><input class='uk-checkbox' type='checkbox'></td>" +
-                        "<td><img class='uk-preserve-width uk-border-circle' src='images/user.jpg' width='40'></td>" +
-                        "<td>"+admin.username+"</td>" +
-                        "<td>"+admin.password+"</td>" +
-                        "<td><button class='uk-button uk-button-secondary'>MANAGE</button></td>"+
+                    "<td><input class='uk-checkbox' type='checkbox'></td>" +
+                    "<td><img class='uk-preserve-width uk-border-circle' src='images/user.png' width='40'></td>" +
+                    "<td>"+admin.username+"</td>" +
+                    "<td>"+admin.password+"</td>" +
+                    "<td><button class='uk-button uk-button-secondary'>MANAGE</button></td>"+
                     "</tr>";
 
                 $("#tblAdmins tbody").append(html);
@@ -33,7 +36,12 @@ $('#btnLoad').click(function () {
 
 
     http.send();
-});
+}
+
+function resetAdminTableAndLoad(){
+    $('#tblAdmins').closest('tr').find('td:empty').remove();
+    loadAllAdmins();
+}
 
 //Save Admin
 $("#btnAddAdmin").click(function(){
@@ -41,6 +49,7 @@ $("#btnAddAdmin").click(function(){
     http.onreadystatechange = function(){
         if (http.readyState === 4 && http.status === 200){
             alert(http.responseText);
+            resetAdminTableAndLoad();
         }
     };
 
