@@ -17,7 +17,7 @@
             <h3>Menu</h3>
 
             <div class="container">
-                <button class="uk-button uk-button-primary btn-side-nav">DASHBOARD</button><br>
+                <a href="admin-dashboard.php"><button class="uk-button uk-button-primary btn-side-nav">DASHBOARD</button></a><br>
                 <div class=""></div>
                 <button class="uk-button uk-button-primary btn-side-nav">COMPANIES</button><br>
                 <a href="add-vehicle.php"><button class="uk-button uk-button-primary btn-side-nav">VEHICLES</button></a><br>

@@ -75,9 +75,9 @@ cmbAdmin.change(function(){
 
         if (http.readyState === 4 && http.status === 200){
             let admin = JSON.parse(http.responseText);
-            // $("#output").text("Name : " + http.responseText);
-            $("#txtAdminPassword").val(admin.password);
-            console.log(admin.password);
+            $("#output").text("Password : " + admin);
+            // $("#txtAdminPassword").val(admin.password);
+            // console.log(admin.password);
         }
 
     };

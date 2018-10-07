@@ -126,7 +126,7 @@ if (!$connection){
                         <div style="width: 100%; height: 4px;"></div>-->
 
                         <input id="txtAdminPassword" class="uk-input" name="password" type="password" placeholder="Password">
-                        <div style="width: 100%; height: 4px;"></div>-->
+                        <div style="width: 100%; height: 4px;"></div>
 
                         <div class="uk-modal-footer uk-text-right">
                             <button class="uk-button uk-button-danger uk-modal-close" type="button">Cancel</button>
