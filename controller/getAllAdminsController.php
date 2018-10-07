@@ -12,7 +12,18 @@ $input = filter_input_array(INPUT_POST);*/
 
 include 'connect.php';
 
-$result = mysqli_query($connection, "SELECT * FROM admin");
+if ($connection){
+    $results = mysqli_query($connection, "SELECT * FROM admin");
+
+    if (mysqli_num_rows($results) > 0){
+        $array = mysqli_fetch_all($results,MYSQLI_ASSOC);
+        echo json_encode($array);
+    }
+}else{
+    echo "Something went wrong with database connection";
+}
+
+/*$result = mysqli_query($connection, "SELECT * FROM admin");
 
 $json_adminArray = array();
 
@@ -20,7 +31,7 @@ while ($row = mysqli_fetch_assoc($result)){
     $json_adminArray[] = $row;
 }
 
-echo json_encode($json_adminArray);
+echo json_encode($json_adminArray);*/
 
 
 

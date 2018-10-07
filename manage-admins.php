@@ -43,6 +43,10 @@
                 <button class="uk-button uk-button-danger" type="button">Delete</button>
             </div>
 
+            <div class="col-sm-1">
+                <button id="btnLoad" class="uk-button uk-button-secondary" type="button">Load</button>
+            </div>
+
             <!--Add Admin Modal-->
             <div id="modal-add-admin" uk-modal>
                 <div class="uk-modal-dialog uk-modal-body">
@@ -96,14 +100,14 @@
             </thead>
 
             <tbody>
-            <tr>
+            <!--<tr>
                 <td>
                     <label>
-                        <input class="uk-checkbox" type="checkbox">
+                        <input class='uk-checkbox' type="checkbox">
                     </label>
                 </td>
                 <td>
-                    <img class="uk-preserve-width uk-border-circle" src="images/avatar.jpg" width="40" alt="">
+                    <img class="uk-preserve-width uk-border-circle" src="images/avatar.jpg" width='40' alt="">
                 </td>
                 <td>
                     admin@rent18.tk
@@ -114,7 +118,7 @@
                 <td>
                     <button class="uk-button uk-button-secondary" type="button">Manage</button>
                 </td>
-            </tr>
+            </tr>-->
             </tbody>
         </table>
     </div>

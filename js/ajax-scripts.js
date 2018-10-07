@@ -2,6 +2,22 @@
  * AJAX SCRIPTS
  * */
 
+//Load All Admins
+$('#btnLoad').click(function () {
+    // let userName = $(this).val();
+    let http = new XMLHttpRequest();
+
+    http.onreadystatechange = function(){
+        if (http.readyState === 4 && http.status === 200){
+            let admins = JSON.parse(http.responseText);
+            // console.log(admins);
+        }
+    };
+
+    http.open('GET','controller/getAllAdminsController.php',true);
+
+    http.send();
+});
 
 //Save Admin
 $("#btnAddAdmin").click(function(){
