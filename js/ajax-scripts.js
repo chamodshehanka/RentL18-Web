@@ -38,6 +38,7 @@ function loadAllAdmins() {
     http.send();
 }
 
+//Reset Admin Table
 function resetAdminTableAndLoad(){
     $('#tblAdmins').closest('tr').find('td:empty').remove();
     loadAllAdmins();
