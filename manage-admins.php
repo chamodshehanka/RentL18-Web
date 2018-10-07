@@ -5,6 +5,14 @@
  * Date: 9/28/2018
  * Time: 1:35 AM
  */
+include 'controller/connect.php';
+
+if (!$connection){
+    echo "Something went wrong with the connection";
+}else{
+    $resultSet = mysqli_query($connection,"SELECT * FROM admin");
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -86,31 +94,43 @@
             <!--Search Admin Modal-->
             <div id="modal-search-admin" uk-modal>
                 <div class="uk-modal-dialog uk-modal-body">
-                    <button class="uk-modal-close-default" type="button" uk-close></button>
-                    <h2 class="uk-modal-title">Search and Update or Delete Admin Admin</h2>
+                    <button id="btn-search-Admin" class="uk-modal-close-default pull-right" type="button" uk-close></button>
+                    <h2 class="uk-modal-title">Search and Update or Delete Admin</h2>
 
-                    <form id="form-add-admin">
-                        <input class="uk-input" name="name" type="text" placeholder="Name">
+                    <form id="form-search-admin">
+
+                        <label for="cmbAdminId">UserName</label>
+                        <select id="cmbAdminId" class="form-control">
+                            <?php
+
+
+                            if (mysqli_num_rows($resultSet) > 0){
+
+                                while($rowData = mysqli_fetch_row($resultSet)){
+                                    echo "<option value=\"{$rowData[0]}\">{$rowData[0]}</option>";
+                                }
+
+                            }
+                            ?>
+                        </select>
+
+
+
+                        <div id="output"></div>
+
+                        <!--<input id="txtUserNameSearch" class="uk-input" name="name" type="text" placeholder="UserName">
+                        <button class="uk-button uk-button-primary" type="button">Search</button>
                         <div style="width: 100%; height: 4px;"></div>
 
-                        <input class="uk-input" name="email" type="text" placeholder="Email">
-                        <div style="width: 100%; height: 4px;"></div>
+                        <!--<input class="uk-input" name="email" type="text" placeholder="Email">
+                        <div style="width: 100%; height: 4px;"></div>-->
 
                         <input id="txtAdminPassword" class="uk-input" name="password" type="password" placeholder="Password">
-                        <div style="width: 100%; height: 4px;"></div>
-
-                        <input id="txtAdminPasswordRe" class="uk-input" type="password" placeholder="Re type Password">
-                        <div style="width: 100%; height: 4px;"></div>
-
-                        <h4>Profile Picture : </h4>
-                        <div class="js-upload" uk-form-custom>
-                            <input id="inputImage" type="file" name="profilePicture" multiple>
-                            <button class="uk-button uk-button-primary" type="button" tabindex="-1">Choose</button>
-                        </div>
+                        <div style="width: 100%; height: 4px;"></div>-->
 
                         <div class="uk-modal-footer uk-text-right">
                             <button class="uk-button uk-button-danger uk-modal-close" type="button">Cancel</button>
-                            <button id="btnAddAdmin" class="uk-button uk-button-primary" type="button">Save</button>
+                            <button class="uk-button uk-button-primary" type="button">Save</button>
                         </div>
                     </form>
                 </div>

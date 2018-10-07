@@ -64,7 +64,8 @@ $("#btnAddAdmin").click(function(){
 });
 
 //Search Admin
-/*$().change(function(){
+let cmbAdmin = $('#cmbAdminId');
+cmbAdmin.change(function(){
 
     let username = $(this).val();
 
@@ -73,9 +74,10 @@ $("#btnAddAdmin").click(function(){
     http.onreadystatechange = function(){
 
         if (http.readyState === 4 && http.status === 200){
-
-            $("#output").text("Name : " + http.responseText);
-
+            let admin = JSON.parse(http.responseText);
+            // $("#output").text("Name : " + http.responseText);
+            $("#txtAdminPassword").val(admin.password);
+            console.log(admin.password);
         }
 
     };
@@ -84,9 +86,9 @@ $("#btnAddAdmin").click(function(){
 
     http.send();
 
-});*/
+});
 
-// $("#cmbCustomerId").change();
+cmbAdmin.change();
 
 //update Admin
 /*

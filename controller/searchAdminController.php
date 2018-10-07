@@ -15,7 +15,8 @@ if ($connection){
 
     if (mysqli_num_rows($results)> 0){
         $rowData = mysqli_fetch_row($results);
-        echo $rowData[1];
+        $jsonString = json_encode($rowData);
+        echo $jsonString;
     }else{
         echo "Invalid User Name";
     }
