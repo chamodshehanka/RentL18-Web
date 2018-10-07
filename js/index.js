@@ -50,3 +50,19 @@ $(document).ready(function () {
     });
 });
 
+//Table Edit
+function viewData() {
+    $.ajax({
+        url : 'controller/process.php?p=view',
+        method: 'GET'
+    }).done(function (data) {
+        $('#tblAdmins tbody').html(data);
+        tableData();
+    });
+}
+
+function tableData() {
+    $('#tblAdmins').Tabledit({
+        url :
+    });
+}

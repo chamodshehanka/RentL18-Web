@@ -151,5 +151,7 @@
 <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
 <!--End Icons-->
 
+<script src="js/jquery.tabledit.js"></script>
+
 <script type="text/javascript"></script>
 <!--End JS Controllers-->
