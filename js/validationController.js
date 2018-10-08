@@ -113,7 +113,7 @@ function signupActionSF() {
     }
 
     function lengthDefine (inputText, alertMsg) {
-        var passExpression = inputText.value;
+        let passExpression = inputText.value;
 
         if ( passExpression.length = 8) {
             return true;
