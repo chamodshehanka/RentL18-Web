@@ -6,7 +6,16 @@
  * Time: 10:55 PM
  */
 
-class Student
-{
+class Student{
+
+	private $username;
+	private $password;
+
+	public function __construct($userName, $password)
+    {
+        $this->username = $username;
+        $this->password = $password;
+
+    }
 
 }
